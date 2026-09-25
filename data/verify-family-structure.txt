@@ -1,0 +1,48 @@
+The collapses without rotation of eleven vortices at alpha = 2 (NUMERICAL, binary64)
+
+1. The dimension of the family
+OK    at the collapse (Newton residual 1.2e-14): 22 equations, 31 unknowns, rank 22, tangent dimension 9, sigma_min/sigma_max 7.29e-04
+   circulations (strongest = -1): [-0.0362 -0.0317  0.3236 -0.0262 -0.0472 -0.0308 -1.     -0.0255 -0.0333
+ -0.083  -0.0137]; signs --+--------
+
+2. Continuation along the nine tangent directions  (0 s)
+   direction 0+1: arclength 2.08, end: max steps, closest pair >= 0.046, circulation span 17.0..153.3, signs --+--------
+   direction 0-1: arclength 3.23, end: max steps, closest pair >= 0.053, circulation span 17.3..109.6, signs --+--------
+   direction 1+1: arclength 3.42, end: max steps, closest pair >= 0.054, circulation span 16.9..129.1, signs --+--------
+   direction 1-1: arclength 3.26, end: max steps, closest pair >= 0.054, circulation span 17.1..119.0, signs --+--------
+   direction 2+1: arclength 2.84, end: max steps, closest pair >= 0.049, circulation span 17.3..124.0, signs --+--------
+   direction 2-1: arclength 1.94, end: max steps, closest pair >= 0.050, circulation span 17.3..114.6, signs --+--------
+   direction 3+1: arclength 3.90, end: max steps, closest pair >= 0.054, circulation span 17.5..121.8, signs --+--------
+   direction 3-1: arclength 3.19, end: max steps, closest pair >= 0.050, circulation span 17.3..119.0, signs --+--------
+   direction 4+1: arclength 3.22, end: max steps, closest pair >= 0.049, circulation span 17.2..118.3, signs --+--------
+   direction 4-1: arclength 1.99, end: max steps, closest pair >= 0.050, circulation span 17.2..129.5, signs --+--------
+   direction 5+1: arclength 3.11, end: max steps, closest pair >= 0.050, circulation span 17.1..122.8, signs --+--------
+   direction 5-1: arclength 2.70, end: max steps, closest pair >= 0.045, circulation span 17.3..131.8, signs --+--------
+   direction 6+1: arclength 3.44, end: max steps, closest pair >= 0.050, circulation span 17.3..110.7, signs --+--------
+   direction 6-1: arclength 3.22, end: max steps, closest pair >= 0.052, circulation span 17.2..110.4, signs --+--------
+   direction 7+1: arclength 3.04, end: max steps, closest pair >= 0.052, circulation span 17.1..119.1, signs --+--------
+   direction 7-1: arclength 3.22, end: max steps, closest pair >= 0.053, circulation span 17.2..116.5, signs --+--------
+   direction 8+1: arclength 3.25, end: max steps, closest pair >= 0.057, circulation span 17.2..113.2, signs --+--------
+   direction 8-1: arclength 3.03, end: max steps, closest pair >= 0.047, circulation span 17.1..122.1, signs --+--------
+OK    all 18 continuations run to the step limit (arclength 1.9 to 3.9 relative to the configuration) without collision, vanishing circulation or loss of rank
+OK    the sign pattern of the circulations (one opposite-signed strong vortex, ten of the other sign) never changes
+OK    along the continuations the circulation span varies from 17 to 153 and the end points solve the equations (largest residual 7.6e-14)
+
+3. Proposition 1: mirror images  (12 s)
+OK    V(mirror image, same circulations) = -conj(V) for 200 random configurations, alpha = 0, 0.5, 1, 2 (largest relative defect 0.0e+00): the mirror image of a solution is a solution run backwards
+OK    the mirror image of the alpha = 2 collapse (2 pi kappa = -1) moves with 2 pi kappa' = 1.000000000000+2.8e-16i = -conj(2 pi kappa): an expansion (residual 2.7e-15)
+OK    neither the collapse nor the end points of item 2 are mirror symmetric: least mirror defect 0.184 (> 0), and every total circulation is nonzero (least |sum G|/sum|G| 0.459)
+
+4. No C_n-symmetric member: two n-gons and a centre  (13 s)
+OK    the reduction against the full Biot-Savart velocities at 40 random points: with the central circulation eliminated, ring 1 turns not at all, ring 2 turns at the rate -F/t11, and all radial rates agree (largest defect relative to the velocity scale 2.1e-13)
+OK    alpha = 1, n = 2 (N = 5): F has one sign on the grid (0 sign changes; F/scale between -1.00e+00 and -3.01e-02)
+OK    alpha = 1, n = 3 (N = 7): F has one sign on the grid (0 sign changes; F/scale between -1.00e+00 and -3.01e-02)
+OK    alpha = 1, n = 5 (N = 11): F has one sign on the grid (0 sign changes; F/scale between -1.00e+00 and -3.01e-02)
+OK    alpha = 2, n = 2 (N = 5): F has one sign on the grid (0 sign changes; F/scale between -1.00e+00 and -3.77e-02)
+OK    alpha = 2, n = 3 (N = 7): F has one sign on the grid (0 sign changes; F/scale between -1.00e+00 and -3.77e-02)
+OK    alpha = 2, n = 5 (N = 11): F has one sign on the grid (0 sign changes; F/scale between -1.00e+00 and -3.77e-02)
+
+5. The most nearly equal weak circulations found  (37 s)
+OK    the member with the most nearly equal nine weak circulations found is a collapse without rotation (residual 6.8e-15); its weak circulations still differ by a factor 1.32, so no equal-circulation member was found
+
+15 checks, 0 failed  (37 s)

@@ -1,0 +1,141 @@
+Exact collapses of a strong vortex with weak tight clusters (mpmath 50 digits)
+
+0. Cluster shapes: translating relative equilibria with zero net circulation
+OK    triple (1, 0.6, -1.6): TRE with zero net circulation, equilateral (sides 1.0, 1.0, 1.0)
+OK    triple (0.8, -1.3, 0.5): TRE found
+OK    quadruple (1, 0.7, -0.5, -1.2): TRE found by Newton from a seed   [zeta = (0.0 + 0.0j), (1.0 + 0.0j), (-0.361665 + 0.515923j), (0.642142 + 0.61179j)]
+OK    quadruple (1, 0.9, 0.8, -2.7): TRE found   [zeta = (0.0 + 0.0j), (1.0 + 0.0j), (1.80845 + 0.482418j), (0.641732 + 1.1859j)]
+
+1. Cluster arrangements: first-order formula, part (b) structure, part (a)
+
+--- pair; e_C/gamma = ['0.0']; predicted (P_min - sqrt3/2)/gamma -> 0.0  (1 s)
+   gamma=1e-2: P_min = 0.86612968104223292887 at y = 0.8658690273, (P_min - sqrt3/2)/gamma = 0.0104277257794, residual 1.71e-51, impulse -2.26e-53, y_C = ['0.86586903'], |Z_C| = ['1.0']
+   gamma=1e-3: P_min = 0.86602645505851892603 at y = 0.8660238282, (P_min - sqrt3/2)/gamma = 0.00105127408028, residual 3.83e-51, impulse 7.49e-54, y_C = ['0.86602383'], |Z_C| = ['1.0']
+   gamma=1e-4: P_min = 0.8660254143057003254 at y = 0.8660253885, (P_min - sqrt3/2)/gamma = 0.000105212616786, residual 5.86e-46, impulse -7.32e-50, y_C = ['0.86602539'], |Z_C| = ['1.0']
+OK    pair: every point exact (Biot-Savart residual < 1e-40, angular impulse < 1e-40, Re kappa < 0)
+OK    pair: error of the first-order slope |(P_min - sqrt3/2)/gamma + (2/sqrt3) min e_C|: 0.0104, 0.00105, 0.000105 -> ratios per decade 0.101, 0.1 (O(gamma): ratio in [0.05, 0.2])
+OK    pair: e = 0 (a pair binds): P_min > sqrt3/2 at every gamma, (P_min - sqrt3/2)/gamma^2 = 1.0427726, 1.0512741, 1.0521262
+OK    pair: part (b) at the minimum, max over clusters of |nuhat - 1|: 4.01e-5, 4.05e-7, 4.05e-9 -> ratios per decade 0.0101, 0.01 (at least linear in gamma over the last decade)
+OK    pair: part (b) at the minimum, max over clusters of |Re q - 1/2|: 5.02e-5, 5.06e-7, 5.06e-9 -> ratios per decade 0.0101, 0.01 (at least linear in gamma over the last decade)
+OK    pair: part (b) at the minimum, max over clusters of TRE defect: 0.00448, 0.00045, 4.5e-5 -> ratios per decade 0.1, 0.1 (at least linear in gamma over the last decade)
+OK    pair: part (b) at the minimum, max over clusters of |P - (y^2+3/4)/(2y)|: 0.000104, 1.05e-6, 1.05e-8 -> ratios per decade 0.0101, 0.01 (at least linear in gamma over the last decade)
+OK    pair: part (b) at y_1 = 0.7, max_C |P - (y_C^2+3/4)/(2 y_C)| with every y_C > 0: 7.7e-5, 7.76e-7, 7.77e-9 -> ratios per decade 0.0101, 0.01 (at least linear in gamma over the last decade)
+OK    pair: part (b) at y_1 = 1.05, max_C |P - (y_C^2+3/4)/(2 y_C)| with every y_C > 0: 0.000141, 1.42e-6, 1.43e-8 -> ratios per decade 0.0101, 0.01 (at least linear in gamma over the last decade)
+
+--- triple (+,+,-); e_C/gamma = ['0.7346938776']; predicted (P_min - sqrt3/2)/gamma -> -0.848351415952  (3 s)
+   gamma=1e-2: P_min = 0.85802541241869214964 at y = 0.8739311408, (P_min - sqrt3/2)/gamma = -0.799999136575, residual 5.81e-50, impulse 4.76e-53, y_C = ['0.87393114'], |Z_C| = ['1.0']
+   gamma=1e-3: P_min = 0.86518193567115991295 at y = 0.8669072306, (P_min - sqrt3/2)/gamma = -0.843468113279, residual 3.76e-49, impulse -6.52e-54, y_C = ['0.86690723'], |Z_C| = ['1.0']
+   gamma=1e-4: P_min = 0.86594061751972596954 at y = 0.8661144969, (P_min - sqrt3/2)/gamma = -0.847862647127, residual 1.24e-47, impulse 8.98e-55, y_C = ['0.8661145'], |Z_C| = ['1.0']
+OK    triple (+,+,-): every point exact (Biot-Savart residual < 1e-40, angular impulse < 1e-40, Re kappa < 0)
+OK    triple (+,+,-): error of the first-order slope |(P_min - sqrt3/2)/gamma + (2/sqrt3) min e_C|: 0.0484, 0.00488, 0.000489 -> ratios per decade 0.101, 0.1 (O(gamma): ratio in [0.05, 0.2])
+OK    triple (+,+,-): e > 0: P_min < sqrt3/2 at gamma = 1e-3 and 1e-4 (no analogue of the fixed-circulation bound for pairs)   [-0.00799999, -0.000843468, -8.47863e-5]
+OK    triple (+,+,-): part (b) at the minimum, max over clusters of |nuhat - 1|: 9.64e-5, 9.78e-7, 9.8e-9 -> ratios per decade 0.0101, 0.01 (at least linear in gamma over the last decade)
+OK    triple (+,+,-): part (b) at the minimum, max over clusters of |Re q - 1/2|: 0.000146, 1.47e-6, 1.47e-8 -> ratios per decade 0.0101, 0.01 (at least linear in gamma over the last decade)
+OK    triple (+,+,-): part (b) at the minimum, max over clusters of TRE defect: 0.0202, 0.00204, 0.000204 -> ratios per decade 0.101, 0.1 (at least linear in gamma over the last decade)
+OK    triple (+,+,-): part (b) at the minimum, max over clusters of |P - (y^2+3/4)/(2y)|: 0.00804, 0.000844, 8.48e-5 -> ratios per decade 0.105, 0.1 (at least linear in gamma over the last decade)
+OK    triple (+,+,-): part (b) at y_1 = 0.7, max_C |P - (y_C^2+3/4)/(2 y_C)| with every y_C > 0: 0.00677, 0.000706, 7.08e-5 -> ratios per decade 0.104, 0.1 (at least linear in gamma over the last decade)
+OK    triple (+,+,-): part (b) at y_1 = 1.05, max_C |P - (y_C^2+3/4)/(2 y_C)| with every y_C > 0: 0.00992, 0.00107, 0.000108 -> ratios per decade 0.108, 0.101 (at least linear in gamma over the last decade)
+
+--- triple (+,-,+); e_C/gamma = ['0.6046511628']; predicted (P_min - sqrt3/2)/gamma -> -0.698191023206  (7 s)
+   gamma=1e-2: P_min = 0.85924017705478205255 at y = 0.8730150775, (P_min - sqrt3/2)/gamma = -0.678522672966, residual 1.42e-49, impulse 3.67e-53, y_C = ['0.87301508'], |Z_C| = ['1.0']
+   gamma=1e-3: P_min = 0.8653291617607504293 at y = 0.8667666917, (P_min - sqrt3/2)/gamma = -0.696242023688, residual 1.38e-48, impulse 4.02e-54, y_C = ['0.86676669'], |Z_C| = ['1.0']
+   gamma=1e-4: P_min = 0.86595560415362115731 at y = 0.8660999461, (P_min - sqrt3/2)/gamma = -0.697996308175, residual 7.86e-48, impulse -5.04e-55, y_C = ['0.86609995'], |Z_C| = ['1.0']
+OK    triple (+,-,+): every point exact (Biot-Savart residual < 1e-40, angular impulse < 1e-40, Re kappa < 0)
+OK    triple (+,-,+): error of the first-order slope |(P_min - sqrt3/2)/gamma + (2/sqrt3) min e_C|: 0.0197, 0.00195, 0.000195 -> ratios per decade 0.0991, 0.0999 (O(gamma): ratio in [0.05, 0.2])
+OK    triple (+,-,+): e > 0: P_min < sqrt3/2 at gamma = 1e-3 and 1e-4 (no analogue of the fixed-circulation bound for pairs)   [-0.00678523, -0.000696242, -6.97996e-5]
+OK    triple (+,-,+): part (b) at the minimum, max over clusters of |nuhat - 1|: 6.48e-5, 6.45e-7, 6.45e-9 -> ratios per decade 0.00996, 0.01 (at least linear in gamma over the last decade)
+OK    triple (+,-,+): part (b) at the minimum, max over clusters of |Re q - 1/2|: 9.81e-5, 9.69e-7, 9.68e-9 -> ratios per decade 0.00987, 0.00999 (at least linear in gamma over the last decade)
+OK    triple (+,-,+): part (b) at the minimum, max over clusters of TRE defect: 0.0167, 0.00167, 0.000166 -> ratios per decade 0.0997, 0.1 (at least linear in gamma over the last decade)
+OK    triple (+,-,+): part (b) at the minimum, max over clusters of |P - (y^2+3/4)/(2y)|: 0.00681, 0.000697, 6.98e-5 -> ratios per decade 0.102, 0.1 (at least linear in gamma over the last decade)
+OK    triple (+,-,+): part (b) at y_1 = 0.7, max_C |P - (y_C^2+3/4)/(2 y_C)| with every y_C > 0: 0.00569, 0.00058, 5.81e-5 -> ratios per decade 0.102, 0.1 (at least linear in gamma over the last decade)
+OK    triple (+,-,+): part (b) at y_1 = 1.05, max_C |P - (y_C^2+3/4)/(2 y_C)| with every y_C > 0: 0.00848, 0.000885, 8.88e-5 -> ratios per decade 0.104, 0.1 (at least linear in gamma over the last decade)
+
+--- quadruple (+,+,-,-); e_C/gamma = ['0.1530236695']; predicted (P_min - sqrt3/2)/gamma -> -0.176696513515  (11 s)
+   gamma=1e-2: P_min = 0.86492269950649722222 at y = 0.8677537179, (P_min - sqrt3/2)/gamma = -0.110270427794, residual 6.3e-50, impulse 8.01e-54, y_C = ['0.86775372'], |Z_C| = ['1.0']
+   gamma=1e-3: P_min = 0.86585531343415342443 at y = 0.8663846872, (P_min - sqrt3/2)/gamma = -0.170090350285, residual 6.86e-49, impulse -1.29e-54, y_C = ['0.86638469'], |Z_C| = ['1.0']
+   gamma=1e-4: P_min = 0.86600780014250236762 at y = 0.866063162, (P_min - sqrt3/2)/gamma = -0.176036419363, residual 3.53e-48, impulse -2.94e-55, y_C = ['0.86606316'], |Z_C| = ['1.0']
+OK    quadruple (+,+,-,-): every point exact (Biot-Savart residual < 1e-40, angular impulse < 1e-40, Re kappa < 0)
+OK    quadruple (+,+,-,-): error of the first-order slope |(P_min - sqrt3/2)/gamma + (2/sqrt3) min e_C|: 0.0664, 0.00661, 0.00066 -> ratios per decade 0.0995, 0.0999 (O(gamma): ratio in [0.05, 0.2])
+OK    quadruple (+,+,-,-): e > 0: P_min < sqrt3/2 at gamma = 1e-3 and 1e-4 (no analogue of the fixed-circulation bound for pairs)   [-0.0011027, -0.00017009, -1.76036e-5]
+OK    quadruple (+,+,-,-): part (b) at the minimum, max over clusters of |nuhat - 1|: 7.86e-5, 7.94e-7, 7.95e-9 -> ratios per decade 0.0101, 0.01 (at least linear in gamma over the last decade)
+OK    quadruple (+,+,-,-): part (b) at the minimum, max over clusters of |Re q - 1/2|: 0.000154, 3.48e-5, 3.68e-6 -> ratios per decade 0.227, 0.106 (at least linear in gamma over the last decade)
+OK    quadruple (+,+,-,-): part (b) at the minimum, max over clusters of TRE defect: 0.0247, 0.00246, 0.000245 -> ratios per decade 0.0994, 0.0999 (at least linear in gamma over the last decade)
+OK    quadruple (+,+,-,-): part (b) at the minimum, max over clusters of |P - (y^2+3/4)/(2y)|: 0.0011, 0.00017, 1.76e-5 -> ratios per decade 0.154, 0.103 (at least linear in gamma over the last decade)
+OK    quadruple (+,+,-,-): part (b) at y_1 = 0.7, max_C |P - (y_C^2+3/4)/(2 y_C)| with every y_C > 0: 0.000752, 0.000106, 1.09e-5 -> ratios per decade 0.141, 0.103 (at least linear in gamma over the last decade)
+OK    quadruple (+,+,-,-): part (b) at y_1 = 1.05, max_C |P - (y_C^2+3/4)/(2 y_C)| with every y_C > 0: 0.00143, 0.000254, 2.65e-5 -> ratios per decade 0.177, 0.104 (at least linear in gamma over the last decade)
+
+--- quadruple (+,+,+,-); e_C/gamma = ['1.836732231']; predicted (P_min - sqrt3/2)/gamma -> -2.12087569582  (17 s)
+   gamma=1e-2: P_min = 0.84607721381986329631 at y = 0.8888551074, (P_min - sqrt3/2)/gamma = -1.99481899646, residual 1.35e-49, impulse -1.63e-54, y_C = ['0.88885511'], |Z_C| = ['1.0']
+   gamma=1e-3: P_min = 0.86391708074612856195 at y = 0.8685365567, (P_min - sqrt3/2)/gamma = -2.10832303831, residual 1.48e-49, impulse -8.45e-54, y_C = ['0.86853656'], |Z_C| = ['1.0']
+   gamma=1e-4: P_min = 0.86581344166699027006 at y = 0.8662786062, (P_min - sqrt3/2)/gamma = -2.11962117448, residual 1.05e-47, impulse -2.58e-55, y_C = ['0.86627861'], |Z_C| = ['1.0']
+OK    quadruple (+,+,+,-): every point exact (Biot-Savart residual < 1e-40, angular impulse < 1e-40, Re kappa < 0)
+OK    quadruple (+,+,+,-): error of the first-order slope |(P_min - sqrt3/2)/gamma + (2/sqrt3) min e_C|: 0.126, 0.0126, 0.00125 -> ratios per decade 0.0996, 0.0999 (O(gamma): ratio in [0.05, 0.2])
+OK    quadruple (+,+,+,-): e > 0: P_min < sqrt3/2 at gamma = 1e-3 and 1e-4 (no analogue of the fixed-circulation bound for pairs)   [-0.0199482, -0.00210832, -0.000211962]
+OK    quadruple (+,+,+,-): part (b) at the minimum, max over clusters of |nuhat - 1|: 0.000237, 2.43e-6, 2.43e-8 -> ratios per decade 0.0102, 0.01 (at least linear in gamma over the last decade)
+OK    quadruple (+,+,+,-): part (b) at the minimum, max over clusters of |Re q - 1/2|: 0.000153, 2.04e-5, 2.4e-6 -> ratios per decade 0.134, 0.117 (at least linear in gamma over the last decade)
+OK    quadruple (+,+,+,-): part (b) at the minimum, max over clusters of TRE defect: 0.0445, 0.00443, 0.000442 -> ratios per decade 0.0994, 0.0999 (at least linear in gamma over the last decade)
+OK    quadruple (+,+,+,-): part (b) at the minimum, max over clusters of |P - (y^2+3/4)/(2y)|: 0.0202, 0.00211, 0.000212 -> ratios per decade 0.104, 0.1 (at least linear in gamma over the last decade)
+OK    quadruple (+,+,+,-): part (b) at y_1 = 0.7, max_C |P - (y_C^2+3/4)/(2 y_C)| with every y_C > 0: 0.0162, 0.0017, 0.000171 -> ratios per decade 0.105, 0.1 (at least linear in gamma over the last decade)
+OK    quadruple (+,+,+,-): part (b) at y_1 = 1.05, max_C |P - (y_C^2+3/4)/(2 y_C)| with every y_C > 0: 0.0249, 0.00273, 0.000275 -> ratios per decade 0.11, 0.101 (at least linear in gamma over the last decade)
+
+--- pair + triple (+,+,-); e_C/gamma = ['0.0', '0.7346938776']; predicted (P_min - sqrt3/2)/gamma -> 0.0  (24 s)
+   gamma=1e-2: P_min = 0.86613119955299591174 at y = 0.8659473407, (P_min - sqrt3/2)/gamma = 0.0105795768557, residual 5.2e-50, impulse -3.51e-53, y_C = ['0.86594734', '1.0042762'], |Z_C| = ['1.0', '0.96500857']
+   gamma=1e-3: P_min = 0.86602640625776505337 at y = 0.8660245705, (P_min - sqrt3/2)/gamma = 0.00100247332641, residual 6.29e-49, impulse -4.32e-54, y_C = ['0.86602457', '0.90611727'], |Z_C| = ['1.0', '0.98886096']
+   gamma=1e-4: P_min = 0.86602541361913169368 at y = 0.8660253968, (P_min - sqrt3/2)/gamma = 9.83469304692e-5, residual 9.5e-46, impulse 4.9e-54, y_C = ['0.8660254', '0.87832208'], |Z_C| = ['1.0', '0.99649159']
+OK    pair + triple (+,+,-): every point exact (Biot-Savart residual < 1e-40, angular impulse < 1e-40, Re kappa < 0)
+OK    pair + triple (+,+,-): error of the first-order slope |(P_min - sqrt3/2)/gamma + (2/sqrt3) min e_C|: 0.0106, 0.001, 9.83e-5 -> ratios per decade 0.0948, 0.0981 (O(gamma): ratio in [0.05, 0.2])
+OK    pair + triple (+,+,-): e = 0 (a pair binds): P_min > sqrt3/2 at every gamma, (P_min - sqrt3/2)/gamma^2 = 1.0579577, 1.0024733, 0.9834693
+OK    pair + triple (+,+,-): part (b) at the minimum, max over clusters of |nuhat - 1|: 0.000431, 3.95e-6, 3.84e-8 -> ratios per decade 0.00916, 0.00971 (at least linear in gamma over the last decade)
+OK    pair + triple (+,+,-): part (b) at the minimum, max over clusters of |Re q - 1/2|: 0.000244, 2.14e-6, 2.05e-8 -> ratios per decade 0.00876, 0.00961 (at least linear in gamma over the last decade)
+OK    pair + triple (+,+,-): part (b) at the minimum, max over clusters of TRE defect: 0.0233, 0.00213, 0.000207 -> ratios per decade 0.0918, 0.0971 (at least linear in gamma over the last decade)
+OK    pair + triple (+,+,-): part (b) at the minimum, max over clusters of |P - (y^2+3/4)/(2y)|: 0.00941, 0.000886, 8.61e-5 -> ratios per decade 0.0941, 0.0971 (at least linear in gamma over the last decade)
+OK    pair + triple (+,+,-): part (b) at y_1 = 0.7, max_C |P - (y_C^2+3/4)/(2 y_C)| with every y_C > 0: 0.011, 0.00111, 0.000111 -> ratios per decade 0.101, 0.1 (at least linear in gamma over the last decade)
+OK    pair + triple (+,+,-): part (b) at y_1 = 1.05, max_C |P - (y_C^2+3/4)/(2 y_C)| with every y_C > 0: 0.0108, 0.00108, 0.000108 -> ratios per decade 0.1, 0.0999 (at least linear in gamma over the last decade)
+
+--- triple (+,+,-) + quadruple (+,+,-,-) + triple (+,-,+); e_C/gamma = ['0.1530236695', '0.6046511628', '0.7346938776']; predicted (P_min - sqrt3/2)/gamma -> -0.176696513515  (39 s)
+   gamma=1e-2: P_min = 0.86484390020620353408 at y = 0.8675961827, (P_min - sqrt3/2)/gamma = -0.118150357824, residual 5.04e-50, impulse -1.58e-53, y_C = ['0.86759618', '0.98020826', '0.9927798'], |Z_C| = ['1.0', '0.97168369', '0.96898405']
+   gamma=1e-3: P_min = 0.86585463646467157885 at y = 0.8663831674, (P_min - sqrt3/2)/gamma = -0.170767319767, residual 1.14e-48, impulse -1.16e-53, y_C = ['0.86638317', '0.83703356', '0.83335073'], |Z_C| = ['1.0', '1.0087924', '1.0099263']
+   gamma=1e-4: P_min = 0.86600779318015225441 at y = 0.8660631485, (P_min - sqrt3/2)/gamma = -0.176106042864, residual 2.77e-45, impulse -8.33e-54, y_C = ['0.86606315', '0.85664166', '0.85539192'], |Z_C| = ['1.0', '1.0027527', '1.003121']
+OK    triple (+,+,-) + quadruple (+,+,-,-) + triple (+,-,+): every point exact (Biot-Savart residual < 1e-40, angular impulse < 1e-40, Re kappa < 0)
+OK    triple (+,+,-) + quadruple (+,+,-,-) + triple (+,-,+): error of the first-order slope |(P_min - sqrt3/2)/gamma + (2/sqrt3) min e_C|: 0.0585, 0.00593, 0.00059 -> ratios per decade 0.101, 0.0996 (O(gamma): ratio in [0.05, 0.2])
+OK    triple (+,+,-) + quadruple (+,+,-,-) + triple (+,-,+): e > 0: P_min < sqrt3/2 at gamma = 1e-3 and 1e-4 (no analogue of the fixed-circulation bound for pairs)   [-0.0011815, -0.000170767, -1.76106e-5]
+OK    triple (+,+,-) + quadruple (+,+,-,-) + triple (+,-,+): part (b) at the minimum, max over clusters of |nuhat - 1|: 0.000477, 4.55e-6, 4.61e-8 -> ratios per decade 0.00954, 0.0101 (at least linear in gamma over the last decade)
+OK    triple (+,+,-) + quadruple (+,+,-,-) + triple (+,-,+): part (b) at the minimum, max over clusters of |Re q - 1/2|: 0.00014, 3.41e-5, 3.67e-6 -> ratios per decade 0.244, 0.108 (at least linear in gamma over the last decade)
+OK    triple (+,+,-) + quadruple (+,+,-,-) + triple (+,-,+): part (b) at the minimum, max over clusters of TRE defect: 0.0247, 0.00246, 0.000245 -> ratios per decade 0.0994, 0.0999 (at least linear in gamma over the last decade)
+OK    triple (+,+,-) + quadruple (+,+,-,-) + triple (+,-,+): part (b) at the minimum, max over clusters of |P - (y^2+3/4)/(2y)|: 0.00927, 0.000811, 8.37e-5 -> ratios per decade 0.0875, 0.103 (at least linear in gamma over the last decade)
+OK    triple (+,+,-) + quadruple (+,+,-,-) + triple (+,-,+): part (b) at y_1 = 0.7, max_C |P - (y_C^2+3/4)/(2 y_C)| with every y_C > 0: 0.011, 0.000705, 7.08e-5 -> ratios per decade 0.0643, 0.101 (at least linear in gamma over the last decade)
+OK    triple (+,+,-) + quadruple (+,+,-,-) + triple (+,-,+): part (b) at y_1 = 1.05, max_C |P - (y_C^2+3/4)/(2 y_C)| with every y_C > 0: 0.0106, 0.000714, 7.18e-5 -> ratios per decade 0.0673, 0.101 (at least linear in gamma over the last decade)
+
+2. A (+,-,-) triple and the closed form for equilateral triples  (116 s)
+OK    equilateral triple ['-1.0', '-0.6', '1.6']: slope -(2/sqrt3) e/gamma = 0.848351415952 equals 2 sqrt3 g1 g2 g3/S2 = 0.848351415952
+OK    equilateral triple ['1.0', '0.6', '-1.6']: slope -(2/sqrt3) e/gamma = -0.848351415952 equals 2 sqrt3 g1 g2 g3/S2 = -0.848351415952
+OK    equilateral triple ['0.3', '-1.1', '0.8']: slope -(2/sqrt3) e/gamma = -0.471403518761 equals 2 sqrt3 g1 g2 g3/S2 = -0.471403518761
+   (+,-,-) gamma=1e-2: P_min = 0.8750020298443729, slope 0.897662606, predicted 0.848351416, residual 4.02e-50
+   (+,-,-) gamma=1e-3: P_min = 0.8668786481387278, slope 0.8532443543, predicted 0.848351416, residual 1.04e-48
+   (+,-,-) gamma=1e-4: P_min = 0.8661102878125525, slope 0.8488402811, predicted 0.848351416, residual 3.97e-48
+OK    (+,-,-) triple beside a positive strong vortex (e < 0): P_min > sqrt3/2 at every gamma
+OK    (+,-,-) triple: error of the first-order slope: 0.0493, 0.00489, 0.000489 -> ratios per decade 0.0992, 0.0999 (O(gamma): ratio in [0.05, 0.2])
+
+3. Part (d): singletons (rings with a strong centre at fixed relative rotation)  (120 s)
+OK    ring n=3 theta=0.5 Gamma0=100: exact collapse (residual 3.2e-50, Re kappa -0.00256); P = 30.91241988; P >= c^3/(40 n gamma) = n/a, gamma > c^3/(20 n) (c = 0.4961)
+OK    ring n=3 theta=0.5 Gamma0=1000: exact collapse (residual 1.99e-49, Re kappa -0.000256); P = 310.3783265; P >= c^3/(40 n gamma) = 0.50516 (c = 0.4949)
+OK    ring n=3 theta=0.5 Gamma0=10000: exact collapse (residual 2.8e-48, Re kappa -2.56e-5); P = 3105.166411; P >= c^3/(40 n gamma) = 5.0481 (c = 0.4948)
+OK    ring n=3 theta=0.5: |P gamma - tan(n theta/2)/n|: 0.00141, 0.000154, 1.55e-5 -> ratios per decade 0.109, 0.101 (O(gamma): ratio in [0.05, 0.2])
+OK    ring n=2 theta=0.9 Gamma0=100: exact collapse (residual 4.72e-50, Re kappa -0.00126); P = 62.70379329; P >= c^3/(40 n gamma) = n/a, gamma > c^3/(20 n) (c = 0.8721)
+OK    ring n=2 theta=0.9 Gamma0=1000: exact collapse (residual 4.21e-49, Re kappa -0.000126); P = 629.7651551; P >= c^3/(40 n gamma) = 4.1178 (c = 0.8701)
+OK    ring n=2 theta=0.9 Gamma0=10000: exact collapse (residual 4.65e-48, Re kappa -1.26e-5); P = 6300.476157; P >= c^3/(40 n gamma) = 41.15 (c = 0.87)
+OK    ring n=2 theta=0.9: |P gamma - tan(n theta/2)/n|: 0.00304, 0.000314, 3.15e-5 -> ratios per decade 0.103, 0.1 (O(gamma): ratio in [0.05, 0.2])
+OK    ring n=5 theta=0.3 Gamma0=100: exact collapse (residual 2.16e-51, Re kappa -0.00427); P = 18.56142239; P >= c^3/(40 n gamma) = n/a, gamma > c^3/(20 n) (c = 0.2997)
+OK    ring n=5 theta=0.3 Gamma0=1000: exact collapse (residual 1.47e-49, Re kappa -0.000427); P = 186.228386; P >= c^3/(40 n gamma) = n/a, gamma > c^3/(20 n) (c = 0.299)
+OK    ring n=5 theta=0.3 Gamma0=10000: exact collapse (residual 1.83e-48, Re kappa -4.27e-5); P = 1863.099985; P >= c^3/(40 n gamma) = 0.66749 (c = 0.2989)
+OK    ring n=5 theta=0.3: |P gamma - tan(n theta/2)/n|: 0.000705, 9.09e-5, 9.29e-6 -> ratios per decade 0.129, 0.102 (O(gamma): ratio in [0.05, 0.2])
+
+4. Controls  (120 s)
+OK    two-arm minimizer collapse-euler-n33.json: P = 0.5172291322 < sqrt3/2, outside the regime of Theorem 1: two co-dominant vortices (|Gamma| ratio 1.0), so a class K(n, c) contains it only with gamma >= 1.0 c; the 31 weaker vortices carry net circulation 3.5618 times the strongest and all 31 have one sign, so none of them forms a cluster of net circulation O(gamma^2)
+OK    two-arm minimizer collapse-euler-n61.json: P = 0.4981844392 < sqrt3/2, outside the regime of Theorem 1: two co-dominant vortices (|Gamma| ratio 1.0), so a class K(n, c) contains it only with gamma >= 1.0 c; the 59 weaker vortices carry net circulation 3.4902 times the strongest and all 59 have one sign, so none of them forms a cluster of net circulation O(gamma^2)
+OK    two-arm minimizer collapse-euler-n603.json: P = 0.4793959201 < sqrt3/2, outside the regime of Theorem 1: two co-dominant vortices (|Gamma| ratio 1.0), so a class K(n, c) contains it only with gamma >= 1.0 c; the 601 weaker vortices carry net circulation 3.4215 times the strongest and all 601 have one sign, so none of them forms a cluster of net circulation O(gamma^2)
+OK    seven-vortex collapse of Demina and Kudryashov: self-similar (residual 1.83e-51), P = 0.805356928729 = 12433/(1240 sqrt155)
+OK       it lies in K(6, c) with every weak vortex a singleton and gamma = c, for c = 1/3, 1/10, 1/100, with P < sqrt3/2: so gamma_1(6, c, delta) <= c for delta < sqrt3/2 - P, not uniform as c -> 0
+OK    certified four-vortex minimum of the companion paper (P_4 = 0.7978967839): one strong vortex and a (+,+,-) triple of ratios ['0.1041', '0.1674', '-0.2273'], net circulation / ((1/2) sum Gamma_k^2) = 0.97834, triple diameter / distance = 0.227, first-order slope sign -
+
+90 checks, 0 failed  (120 s)

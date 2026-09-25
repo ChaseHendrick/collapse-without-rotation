@@ -1,0 +1,19 @@
+N 8 fam 0 min#0 P 0.679770 -> alpha* 2.5993690531 hmin 0.616 pair 0.103 Gspan 51.4 5s
+N 8 fam 0 min#1 P 0.694411 -> alpha* 8.0863308796 hmin 0.356 pair 0.223 Gspan 1.19e+03 7s
+N 8 fam 0 min#2 P 0.728709 FAILED
+N 8 fam 1 min#0 P 0.341553 -> alpha* 2.5993690531 hmin 0.616 pair 0.103 Gspan 51.4 6s
+N 8 fam 1 min#1 P 0.447324 -> alpha* 8.0863308796 hmin 0.356 pair 0.223 Gspan 1.19e+03 12s
+N 8 fam 2 min#0 P 0.114599 -> alpha* 2.5993690531 hmin 0.616 pair 0.103 Gspan 51.4 6s
+N 8 fam 2 min#1 P 0.313079 -> alpha* 8.0863308796 hmin 0.356 pair 0.223 Gspan 1.19e+03 13s
+N 9 fam 0 min#0 P 0.669581 -> alpha* 2.3000208434 hmin 0.376 pair 0.0874 Gspan 45.1 13s
+N 9 fam 1 min#0 P 0.316336 -> alpha* 2.3000208434 hmin 0.376 pair 0.0874 Gspan 45.1 15s
+N 9 fam 1 min#1 P 0.402904 -> alpha* 5.7554694090 hmin 0.0316 pair 0.239 Gspan 126 8s
+N 9 fam 2 min#0 P 0.067576 -> alpha* 2.3000208434 hmin 0.376 pair 0.0874 Gspan 45.1 7s
+N 9 fam 2 min#1 P 0.261174 -> alpha* 5.7554694090 hmin 0.0316 pair 0.239 Gspan 126 7s
+N 9 fam 2 min#2 P 0.263180 -> alpha* 5.2557582423 hmin 0.253 pair 0.183 Gspan 172 6s
+N 10 fam 0 min#0 P 0.637706 -> alpha* 4.4051046186 hmin 0.0704 pair 0.172 Gspan 76.2 8s
+N 10 fam 0 min#1 P 0.661793 -> alpha* 2.0913751011 hmin 0.252 pair 0.0752 Gspan 42.3 17s
+N 10 fam 1 min#0 P 0.295096 -> alpha* 2.0913751011 hmin 0.252 pair 0.0752 Gspan 42.3 13s
+N 10 fam 1 min#1 P 0.370864 -> alpha* 4.4051046186 hmin 0.0704 pair 0.172 Gspan 76.2 7s
+N 10 fam 2 min#0 P 0.023708 -> alpha* 2.0913751011 hmin 0.252 pair 0.0752 Gspan 42.3 4s
+N 10 fam 2 min#1 P 0.219069 -> alpha* 4.4051046186 hmin 0.0704 pair 0.172 Gspan 76.2 5s

@@ -1,0 +1,79 @@
+Theorem 1 (a strong vortex with weak tight clusters): exact identities, SymPy 1.14.0
+
+1. Internal identities of a cluster
+OK    (I1) n=2: sum_k g_k w_k = 0
+OK    (I2) n=2: sum_k g_k zeta_k w_k = (G^2 - S2)/2
+OK         n=2: G^2 - S2 = 2 sum_{k<l} g_k g_l (positive for a same-sign cluster of two or more)
+OK    (I1) n=3: sum_k g_k w_k = 0
+OK    (I2) n=3: sum_k g_k zeta_k w_k = (G^2 - S2)/2
+OK         n=3: G^2 - S2 = 2 sum_{k<l} g_k g_l (positive for a same-sign cluster of two or more)
+OK    (I1) n=4: sum_k g_k w_k = 0
+OK    (I2) n=4: sum_k g_k zeta_k w_k = (G^2 - S2)/2
+OK         n=4: G^2 - S2 = 2 sum_{k<l} g_k g_l (positive for a same-sign cluster of two or more)
+OK    (I1) n=5: sum_k g_k w_k = 0
+OK    (I2) n=5: sum_k g_k zeta_k w_k = (G^2 - S2)/2
+OK         n=5: G^2 - S2 = 2 sum_{k<l} g_k g_l (positive for a same-sign cluster of two or more)
+
+2. The weighted sums and the leading-order algebra (Steps 2 and 4)
+OK    (A) exact: sum g/(Z + gam zeta) = G/Z - gam D/Z^2 + gam^2 sum g zeta^2/(Z^2 (Z + gam zeta))
+OK    (B) exact: sum g zeta/(Z + gam zeta) = D/Z - gam sum g zeta^2/(Z (Z + gam zeta))
+OK    translation equation Lambda conj(Z) = 1/Z + T with q = 1/(T Z) gives Lambda |Z|^2 = 1 + 1/q
+OK    (B) in the limit with G = 0: D = -S2/(2 T) = -(S2/2) q Z
+OK    (A') in the limit: nu = -(Lambda conj D + D/Z^2)/T = (S2/2)(|q|^2 + conj q + q^2)
+OK       = (S2/2)[(2p^2 + p) + i y (2p - 1)]
+OK    nu is real (circulations are real) iff y (2p - 1) = 0   [S2*y*(2*p - 1)/2]
+OK    p = 1/2: nu = S2/2, the net circulation gamma^2 nu = (1/2) sum Gamma_k^2 (ratio nuhat = 1)
+OK    p = 1/2: P = Re(Lambda|Z|^2)/(2|Im(Lambda|Z|^2)|) = (y^2 + 3/4)/(2y)
+OK    Im(Lambda |Z|^2) = -y/|q|^2 (a collapse, Im Lambda < 0, forces y > 0)
+OK    Re(Lambda |Z|^2) = 1 + p/|q|^2 (positive at p = 1/2)
+OK    1/q = 1 + e^{-i phi} gives Re q = 1/2
+OK    with t = arg q (p = 1/2, y = tan(t)/2): P = (2 + cos 2t)/(2 sin 2t)
+OK    speed ratio |V_C|/|V_s| = 1/|q| = 2 cos t on p = 1/2 (at t = pi/5)
+OK    minimum at y = sqrt3/2: q = e^{i pi/3}, |q| = 1, P = sqrt3/2
+OK    (y^2 + 3/4)/(2y) = sqrt3/2 + (y - sqrt3/2)^2/(2y)
+OK    the two roots y, 3/(4y) of y^2 - 2 P y + 3/4 give the same P
+OK    p = 1/2: |1 + 1/q|^2 = ((3/4 + y^2)^2 + y^2)/(1/4 + y^2)^2, and Lambda|Z_C|^2 = 1 + 1/q_C fixes |Z_C| from y_C
+OK       the two roots y and 3/(4y) give different |Z_C| unless y = sqrt3/2   [-8*(4*y**2 - 3)*(4*y**2 + 3)/((4*y**2 + 1)*(4*y**2 + 9))]
+
+3. The angular impulse (Case B)
+OK    impulse of one cluster: the coefficient of gamma vanishes when G = gamma nu
+OK    impulse of one cluster: the gamma^2 coefficient is nu |Z|^2 + 2 Re(conj(Z) D)
+OK    Case B, Lambda* = 0 forces q = -1: nu|Z|^2 + 2 Re(conj Z D) = (3/2) S2 |Z|^2 > 0, so zero impulse is impossible
+OK    per-cluster impulse density (S2/2)|Z|^2 (2p^2 - p), zero at p = 1/2
+
+4. The classical condition sum_{i<j} Gamma_i Gamma_j = 0
+OK    one cluster: sum_{i<j} Gamma_i Gamma_j = gamma G + gamma^2 (G^2 - S2)/2 (strong vortex 1, weak gamma g_k)
+OK    one cluster: the condition is S2 = 2 nu + gamma^2 nu^2, i.e. nuhat = 2 nu/S2 = 1 - gamma^2 nu^2/S2 exactly
+OK       hence nuhat = 1 - gamma^2 S2/4 + O(gamma^4): constant term 1, no gamma or gamma^3 term, gamma^2 coefficient -S2/4   [-S2/4]
+OK    two clusters: sum_{i<j} Gamma_i Gamma_j = gamma(G1 + G2) + gamma^2[(G1^2 - S2_1)/2 + (G2^2 - S2_2)/2 + G1 G2]
+
+5. Part (d), a singleton: explicit constants; the class of the companion paper
+OK    x = 10 n gamma/c^3, |e1| <= 0.4 x, |e2| <= 0.1 x: x - (|e1| + |e2|)/(1 - |e1|) = x(5 - 4x)/(2(5 - 2x)) >= 0 on 0 < x <= 1/2
+OK    then |Lambda|z|^2 - 1| <= x <= 1/2 gives P >= (1 - x)/(2x) >= 1/(4x) = c^3/(40 n gamma)
+OK    |e2| <= n gamma/c^3 for every n: (n - 1)(20n + 1) <= 2n(10n - 1), difference 17n + 1 > 0   [17*n + 1]
+OK    |e1| <= (20/19)^2 (1 + 1/20) n gamma/c^3 < 1.2 n gamma/c^3 <= 4 n gamma/c^3 for every n   [1.16343]
+OK    the companion paper's class (c <= a, b <= 1/c; c <= |Z| <= 1/c; c gamma |Z| <= |W - Z| <= gamma |Z|/c; |Z_j - Z_l| >= c) lies in K(2m, c^2): gamma|Z|/c <= gamma/c^2 and c gamma |Z| >= c^2 gamma
+
+6. The formal first-order expansion (not a proof)
+OK    J = N2 - Re(conj(M2) D/conj(D)) = 2 sum g_k h_k^2, h_k the coordinate perpendicular to D (G = 0)
+OK       J is translation invariant
+OK    L = Lambda|Z|^2 solves L = 1 + (1 + e L)/q, so L = (q + 1)/(q - e)
+OK       nu/(S2/2) = [L|q|^2 + q^2]/(1 + e L) = [|q|^2 + conj q + q^2 - e q]/(1 + e)
+OK       nu real iff y (2p - 1 - e) = 0
+OK       p = (1 + e)/2: P = [(3 + e)(1 - e)/4 + y^2]/(2 y (1 + e))
+OK       minimum over y at y^2 = (3 + e)(1 - e)/4: P_min = sqrt((3 + e)(1 - e))/(2(1 + e))
+OK       dP_min/de = -2/sqrt3 at e = 0: P_min = sqrt3/2 - (2/sqrt3) e + O(e^2)
+OK       e = 2 gamma J/(S2 |Z|^2) = gamma J S2/(2|D|^2) at |q| = 1
+OK    the equilateral triangle with G = 0 is a translating relative equilibrium (w_1 = w_2 = w_3)
+OK    equilateral triple: J S2/|D|^2 = -6 g1 g2 g3/S2, so e = -3 gamma g1 g2 g3/S2
+OK       slope -(2/sqrt3) e/gamma = 2 sqrt3 g1 g2 g3/S2 (negative for a (+,+,-) triple beside a positive strong vortex)
+OK       for g = (1, 0.6, -1.6) only: the slope is -1.92 sqrt3/3.92 = -0.8483514160 (this number belongs to that triple)   [-0.848351415952]
+OK    pair (a at 0, -a at d): J = 0, so e = 0 and there is no O(gamma) term (consistent with the companion paper's Prop. 4)
+
+7. Negative controls (must fail)
+OK    control: P = (2 + cos t)/(2|sin t|), with t in place of 2t, is not sqrt3/2 at t = pi/3 (it is 5/(2 sqrt3))   [5*sqrt(3)/6]
+OK    control: the formula with q in place of conj q is not real on p = 1/2 (y != 0)
+OK    control: dropping the angular impulse, q = -1 (Lambda* = 0) solves the other limit equations
+OK    control: a same-sign pair has G^2 - S2 = 2 g1 g2 > 0, so it cannot satisfy G^2 = S2
+
+62 checks, 0 failed

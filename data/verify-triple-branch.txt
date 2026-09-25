@@ -1,0 +1,69 @@
+1. Exact checks over Q(t)(omega), g = (1, t, -1 - t), y0 = sqrt3/2
+OK    omega = exp(+2 pi i/3): the triangle translates, w_1 = w_2 = w_3 = 1/q0
+OK    omega = exp(+2 pi i/3): at gamma = 0, E_1 = E_2 = 0, E_0 = 0 and D = -(S/2) q0
+OK    omega = exp(+2 pi i/3): at the unit triangle d(w1 - w2) = g3 (omega^2 dzeta1 - omega dzeta2), nonzero since g3 != 0
+OK    omega = exp(+2 pi i/3): at zeta_k = a omega^k the form is the unit-triangle form divided by a^2 (so nonzero for every y0)
+OK    omega = exp(+2 pi i/3): d(w1 - w2) annihilates the scaling direction zeta0, and d w_1 . zeta0 = -1/q0
+OK    omega = exp(+2 pi i/3): the linear system for the derivative is consistent (d conj(Lambda) = conj(d Lambda))
+OK    omega = exp(+2 pi i/3): dP/dgamma at gamma = 0 equals 2 sqrt3 g1 g2 g3/S, identically in t = g2/g1   [Lambda'(0) = [-(t**3 + 6*t**2 + 3*t - 1)/(3*(t**2 + t + 1))] + [(t**3 - 3*t**2 - 6*t - 1)/(3*(t**2 + t + 1))] omega]
+OK    omega = exp(+2 pi i/3): d nu/dgamma at gamma = 0 equals g3 S/2   [-(t + 1)*(t**2 + t + 1)]
+OK    omega = exp(-2 pi i/3): the triangle translates, w_1 = w_2 = w_3 = 1/q0
+OK    omega = exp(-2 pi i/3): at gamma = 0, E_1 = E_2 = 0, E_0 = 0 and D = -(S/2) q0
+OK    omega = exp(-2 pi i/3): at the unit triangle d(w1 - w2) = g3 (omega^2 dzeta1 - omega dzeta2), nonzero since g3 != 0
+OK    omega = exp(-2 pi i/3): at zeta_k = a omega^k the form is the unit-triangle form divided by a^2 (so nonzero for every y0)
+OK    omega = exp(-2 pi i/3): d(w1 - w2) annihilates the scaling direction zeta0, and d w_1 . zeta0 = -1/q0
+OK    omega = exp(-2 pi i/3): the linear system for the derivative is consistent (d conj(Lambda) = conj(d Lambda))
+OK    omega = exp(-2 pi i/3): dP/dgamma at gamma = 0 equals 2 sqrt3 g1 g2 g3/S, identically in t = g2/g1   [Lambda'(0) = [(t**3 - 3*t**2 - 6*t - 1)/(3*(t**2 + t + 1))] + [-(t**3 + 6*t**2 + 3*t - 1)/(3*(t**2 + t + 1))] omega]
+OK    omega = exp(-2 pi i/3): d nu/dgamma at gamma = 0 equals g3 S/2   [-(t + 1)*(t**2 + t + 1)]
+
+2. The branch at 40 digits
+OK    g = (1.0, 1.0, -2.0), omega = exp(+2 pi i/3): gamma = 0 residual below 1e-35 and det of the Jacobian nonzero   [-20.78461]
+OK    g = (1.0, 1.0, -2.0), omega = exp(+2 pi i/3): every branch point satisfies the Biot-Savart equations of all four vortices to 1e-30   [2.33e-37]
+OK    g = (1.0, 1.0, -2.0), omega = exp(+2 pi i/3): Im Lambda < 0 (a collapse) at every gamma
+OK    g = (1.0, 1.0, -2.0), omega = exp(+2 pi i/3): (P - sqrt3/2)/gamma -> 2 sqrt3 g1g2g3/S = -1.154700538, error falling about tenfold per decade   [errors 0.0675, 0.00691, 0.000693, 6.93e-5]
+OK    g = (1.0, 1.0, -2.0), omega = exp(+2 pi i/3): g1 g2 g3 < 0, so P < sqrt3/2 at gamma = 1e-2 .. 1e-5   [P(1e-2) = 0.855153250002]
+OK    g = (1.0, 1.0, -2.0), omega = exp(-2 pi i/3): gamma = 0 residual below 1e-35 and det of the Jacobian nonzero   [-20.78461]
+OK    g = (1.0, 1.0, -2.0), omega = exp(-2 pi i/3): every branch point satisfies the Biot-Savart equations of all four vortices to 1e-30   [2.33e-37]
+OK    g = (1.0, 1.0, -2.0), omega = exp(-2 pi i/3): Im Lambda < 0 (a collapse) at every gamma
+OK    g = (1.0, 1.0, -2.0), omega = exp(-2 pi i/3): (P - sqrt3/2)/gamma -> 2 sqrt3 g1g2g3/S = -1.154700538, error falling about tenfold per decade   [errors 0.0675, 0.00691, 0.000693, 6.93e-5]
+OK    g = (1.0, 1.0, -2.0), omega = exp(-2 pi i/3): g1 g2 g3 < 0, so P < sqrt3/2 at gamma = 1e-2 .. 1e-5   [P(1e-2) = 0.855153250002]
+OK    g = (1.0, 0.6, -1.6), omega = exp(+2 pi i/3): gamma = 0 residual below 1e-35 and det of the Jacobian nonzero   [-31.16393]
+OK    g = (1.0, 0.6, -1.6), omega = exp(+2 pi i/3): every branch point satisfies the Biot-Savart equations of all four vortices to 1e-30   [4.6e-37]
+OK    g = (1.0, 0.6, -1.6), omega = exp(+2 pi i/3): Im Lambda < 0 (a collapse) at every gamma
+OK    g = (1.0, 0.6, -1.6), omega = exp(+2 pi i/3): (P - sqrt3/2)/gamma -> 2 sqrt3 g1g2g3/S = -0.848351416, error falling about tenfold per decade   [errors 0.0518, 0.00533, 0.000535, 5.35e-5]
+OK    g = (1.0, 0.6, -1.6), omega = exp(+2 pi i/3): g1 g2 g3 < 0, so P < sqrt3/2 at gamma = 1e-2 .. 1e-5   [P(1e-2) = 0.858060245613]
+OK    g = (1.0, 0.6, -1.6), omega = exp(-2 pi i/3): gamma = 0 residual below 1e-35 and det of the Jacobian nonzero   [-31.16393]
+OK    g = (1.0, 0.6, -1.6), omega = exp(-2 pi i/3): every branch point satisfies the Biot-Savart equations of all four vortices to 1e-30   [3.69e-37]
+OK    g = (1.0, 0.6, -1.6), omega = exp(-2 pi i/3): Im Lambda < 0 (a collapse) at every gamma
+OK    g = (1.0, 0.6, -1.6), omega = exp(-2 pi i/3): (P - sqrt3/2)/gamma -> 2 sqrt3 g1g2g3/S = -0.848351416, error falling about tenfold per decade   [errors 0.0299, 0.00303, 0.000304, 3.04e-5]
+OK    g = (1.0, 0.6, -1.6), omega = exp(-2 pi i/3): g1 g2 g3 < 0, so P < sqrt3/2 at gamma = 1e-2 .. 1e-5   [P(1e-2) = 0.857841238452]
+OK    g = (-1.3, 0.5, 0.8), omega = exp(+2 pi i/3): gamma = 0 residual below 1e-35 and det of the Jacobian nonzero   [-17.985601]
+OK    g = (-1.3, 0.5, 0.8), omega = exp(+2 pi i/3): every branch point satisfies the Biot-Savart equations of all four vortices to 1e-30   [6.55e-37]
+OK    g = (-1.3, 0.5, 0.8), omega = exp(+2 pi i/3): Im Lambda < 0 (a collapse) at every gamma
+OK    g = (-1.3, 0.5, 0.8), omega = exp(+2 pi i/3): (P - sqrt3/2)/gamma -> 2 sqrt3 g1g2g3/S = -0.6981910232, error falling about tenfold per decade   [errors 0.0171, 0.00172, 0.000172, 1.72e-5]
+OK    g = (-1.3, 0.5, 0.8), omega = exp(+2 pi i/3): g1 g2 g3 < 0, so P < sqrt3/2 at gamma = 1e-2 .. 1e-5   [P(1e-2) = 0.85921474697]
+OK    g = (-1.3, 0.5, 0.8), omega = exp(-2 pi i/3): gamma = 0 residual below 1e-35 and det of the Jacobian nonzero   [-17.985601]
+OK    g = (-1.3, 0.5, 0.8), omega = exp(-2 pi i/3): every branch point satisfies the Biot-Savart equations of all four vortices to 1e-30   [7.66e-37]
+OK    g = (-1.3, 0.5, 0.8), omega = exp(-2 pi i/3): Im Lambda < 0 (a collapse) at every gamma
+OK    g = (-1.3, 0.5, 0.8), omega = exp(-2 pi i/3): (P - sqrt3/2)/gamma -> 2 sqrt3 g1g2g3/S = -0.6981910232, error falling about tenfold per decade   [errors 0.0315, 0.00315, 0.000315, 3.15e-5]
+OK    g = (-1.3, 0.5, 0.8), omega = exp(-2 pi i/3): g1 g2 g3 < 0, so P < sqrt3/2 at gamma = 1e-2 .. 1e-5   [P(1e-2) = 0.859358153115]
+OK    g = (-1.0, -0.6, 1.6), omega = exp(+2 pi i/3): gamma = 0 residual below 1e-35 and det of the Jacobian nonzero   [-31.16393]
+OK    g = (-1.0, -0.6, 1.6), omega = exp(+2 pi i/3): every branch point satisfies the Biot-Savart equations of all four vortices to 1e-30   [3.89e-37]
+OK    g = (-1.0, -0.6, 1.6), omega = exp(+2 pi i/3): Im Lambda < 0 (a collapse) at every gamma
+OK    g = (-1.0, -0.6, 1.6), omega = exp(+2 pi i/3): (P - sqrt3/2)/gamma -> 2 sqrt3 g1g2g3/S = 0.848351416, error falling about tenfold per decade   [errors 0.0553, 0.00536, 0.000535, 5.35e-5]
+OK    g = (-1.0, -0.6, 1.6), omega = exp(+2 pi i/3): g1 g2 g3 > 0, so P > sqrt3/2 at gamma = 1e-2 .. 1e-5 (same y0)
+OK    g = (-1.0, -0.6, 1.6), omega = exp(-2 pi i/3): gamma = 0 residual below 1e-35 and det of the Jacobian nonzero   [-31.16393]
+OK    g = (-1.0, -0.6, 1.6), omega = exp(-2 pi i/3): every branch point satisfies the Biot-Savart equations of all four vortices to 1e-30   [2.41e-37]
+OK    g = (-1.0, -0.6, 1.6), omega = exp(-2 pi i/3): Im Lambda < 0 (a collapse) at every gamma
+OK    g = (-1.0, -0.6, 1.6), omega = exp(-2 pi i/3): (P - sqrt3/2)/gamma -> 2 sqrt3 g1g2g3/S = 0.848351416, error falling about tenfold per decade   [errors 0.0309, 0.00304, 0.000304, 3.04e-5]
+OK    g = (-1.0, -0.6, 1.6), omega = exp(-2 pi i/3): g1 g2 g3 > 0, so P > sqrt3/2 at gamma = 1e-2 .. 1e-5 (same y0)
+OK    y0 = 0.4: det of the Jacobian at gamma = 0 nonzero, and P(1e-6) - (y0^2 + 3/4)/(2 y0) = O(gamma)   [-6.58e-7]
+OK    y0 = 1.5: det of the Jacobian at gamma = 0 nonzero, and P(1e-6) - (y0^2 + 3/4)/(2 y0) = O(gamma)   [-2.0e-6]
+OK    g = (1, 1, -2): the branch lies in K(3, 1/2) (Z_C = 1) at gamma = 1e-2 .. 1e-5; there P < sqrt3/2
+
+3. Negative controls (must fail)
+OK    control: nu = 1.01 S/2 does not solve the system at gamma = 0
+OK    control: without the factor 1/gamma, sum g_k E_k vanishes at gamma = 0 also for nu = 1.01 S/2, so it cannot fix nu   [1.95e-41]
+OK    control: twice the slope is not the observed slope at gamma = 1e-5
+
+62 checks, 0 failed

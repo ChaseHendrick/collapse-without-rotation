@@ -1,0 +1,8 @@
+N 9 starts 2 [2.300021, 5.755469]
+  new local min alpha* 5.7554694090 (hmin 0.0316 pair 0.239 Gspan 126 Gsum -0.986) sig 0.14 t 2s
+  new local min alpha* 2.3000208434 (hmin 0.376 pair 0.0874 Gspan 45.1 Gsum -0.999) sig 0.06 t 3s
+  new local min alpha* 5.2557582423 (hmin 0.239 pair 0.183 Gspan 172 Gsum -1) sig 0.81 t 247s
+attempts 5352 {'land': 323, 'noland': 5009, 'degenerate': 20, 'kktfail': 150}
+  alpha* 2.3000208434 x50 hmin 0.376 pair 0.0874 Gspan 45.1 Gsum -0.999
+  alpha* 5.2557582423 x32 hmin 0.253 pair 0.183 Gspan 172 Gsum -0.825
+  alpha* 5.7554694090 x91 hmin 0.0316 pair 0.239 Gspan 126 Gsum -0.986

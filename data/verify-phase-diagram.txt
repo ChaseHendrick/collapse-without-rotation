@@ -1,0 +1,107 @@
+Phase diagram of collapse without rotation: alpha*(N) along four families (NUMERICAL, binary64)
+120 rows: S 69, E-odd(C2) 34, E-even 9, E-asym 8
+
+1-3. Every row against its stored configuration
+   (11 s)
+OK    every row has a stored configuration
+OK    every stored configuration is a self-similar collapse at its alpha*: largest relative residual 4.6e-13 < 1e-9
+OK    without rotation: largest P = |Im kappa|/(-2 Re kappa) is 1.0e-14 < 1e-9
+OK    alpha* stored agrees with the table (largest difference 4.9e-11)
+OK    the 69 refined thresholds of the recorded families lie inside their recorded brackets of width 1e-4 or less
+OK    closest pair and circulation span agree with the table to 4 digits (largest relative differences 4.2e-04, 4.3e-04)
+OK    first-order condition of min alpha on Z at every row: largest residual 4.1e-12 < 1e-7
+OK    family S: reduced Hessian positive definite (a strict local minimum of alpha on Z) at 69 of 69 rows
+OK    family E-even: reduced Hessian positive definite (a strict local minimum of alpha on Z) at 9 of 9 rows
+OK    family E-asym: reduced Hessian positive definite (a strict local minimum of alpha on Z) at 8 of 8 rows
+   family E-odd(C2): reduced Hessian in the full space positive definite at 34 of 34 rows
+OK    family E-odd(C2), N = 13..29 (recorded): strict local minima of alpha on Z in the full space
+OK    the odd Euler branch is exactly C2-symmetric (a central vortex and pairs z, -z with equal circulations): largest defect 1.0e-13
+OK    the even Euler branch and the SQG-type family are not C2-symmetric: least defects 0.48 and 2.00
+
+4. Least N with a collapse without rotation, along these families  (11 s)
+OK    alpha = 6: least N = 5
+OK    alpha = 5: least N = 6
+OK    alpha = 4: least N = 6
+OK    alpha = 3: least N = 8
+OK    alpha = 2.5: least N = 9
+OK    alpha = 2: least N = 11
+OK    alpha = 1.5: least N = 17
+OK    alpha = 1.2: least N = 29
+OK    alpha = 1: least N = 60
+OK    S is the lowest family at every N where another exists
+OK    alpha = 2: alpha*(9) = 2.3000208434 > 2, alpha*(10) = 2.0913751011 > 2, alpha*(11) = 1.9372878365 < 2
+OK    SQG (alpha = 1): the S family crosses between N = 59 (1.00246) and 60 (0.99921); the odd Euler branch between N = 73 (1.00246) and 75 (0.99543)
+OK    alpha*(N) decreases along S (N = 5..73) and along the odd Euler branch (N = 13..79)
+OK    least values computed: 0.96443 (S, N = 73) and 0.98242 (odd Euler, N = 79), both positive
+
+5. The 11/N law does not hold; the local exponent drifts
+   N^2 |d alpha*/dN| along S: 5:58.23 10:16.95 15:13.02 20:11.77 25:11.27 30:11.08 35:11.03 40:11.06 45:11.15 50:11.26 55:11.40 60:11.54 65:11.70 70:11.86
+OK    N^2 |d alpha*/dN| along S has its least value 11.03 at N = 35 and then rises to 11.92 at N = 72 (not constant)
+   odd Euler branch: 13:45.70 21:27.32 29:22.71 37:20.84 45:19.95 53:19.50 61:19.30 69:19.24 77:19.27
+OK    along the odd Euler branch the same quantity stops falling at 19.24 near N = 69 and turns up
+OK    local exponent p_eff (alpha* ~ a + b N^-p) along S falls steadily: 1.06 (N = 30), 0.90 (N = 48), 0.82 (N = 66)
+
+6. Fits of alpha_inf over forms and windows  (11 s)
+   S          N >= 56 (18 pts) a+b/N+c/N^2                          alpha_inf 0.7895  rms 5.4e-06
+   S          N >= 56 (18 pts) a+b/N+c/N^2+d/N^3                    alpha_inf 0.7764  rms 2.3e-07
+   S          N >= 56 (18 pts) a+b*N^-p                             alpha_inf 0.7674  rms 2.9e-06
+   S          N >= 56 (18 pts) a+(b ln N + c)/N                     alpha_inf 0.7739  rms 3.2e-06
+   S          N >= 56 (18 pts) a+b/(ln N)^q                         alpha_inf 0.6774  rms 4.0e-07
+   S          N >= 56 (18 pts) b/(ln N)^q [alpha_inf = 0 forced]    alpha_inf 0.0000  rms 2.1e-04
+   S          N >= 56 (18 pts) b*N^-p [alpha_inf = 0 forced]        alpha_inf 0.0000  rms 3.4e-04
+   S          N >= 46 (28 pts) a+b/N+c/N^2                          alpha_inf 0.7934  rms 2.8e-05
+   S          N >= 46 (28 pts) a+b/N+c/N^2+d/N^3                    alpha_inf 0.7796  rms 2.1e-06
+   S          N >= 46 (28 pts) a+b*N^-p                             alpha_inf 0.7739  rms 1.7e-05
+   S          N >= 46 (28 pts) a+(b ln N + c)/N                     alpha_inf 0.7789  rms 1.8e-05
+   S          N >= 46 (28 pts) a+b/(ln N)^q                         alpha_inf 0.6794  rms 2.6e-06
+   S          N >= 46 (28 pts) b/(ln N)^q [alpha_inf = 0 forced]    alpha_inf 0.0000  rms 6.9e-04
+   S          N >= 46 (28 pts) b*N^-p [alpha_inf = 0 forced]        alpha_inf 0.0000  rms 1.1e-03
+   S          N >= 33 (41 pts) a+b/N+c/N^2                          alpha_inf 0.8005  rms 1.5e-04
+   S          N >= 33 (41 pts) a+b/N+c/N^2+d/N^3                    alpha_inf 0.7854  rms 1.8e-05
+   S          N >= 33 (41 pts) a+b*N^-p                             alpha_inf 0.7867  rms 1.1e-04
+   S          N >= 33 (41 pts) a+(b ln N + c)/N                     alpha_inf 0.7892  rms 1.1e-04
+   S          N >= 33 (41 pts) a+b/(ln N)^q                         alpha_inf 0.6841  rms 2.1e-05
+   S          N >= 33 (41 pts) b/(ln N)^q [alpha_inf = 0 forced]    alpha_inf 0.0000  rms 2.4e-03
+   S          N >= 33 (41 pts) b*N^-p [alpha_inf = 0 forced]        alpha_inf 0.0000  rms 3.8e-03
+OK    S: every free fit gives alpha_inf in [0.677, 0.800], inside [0.64, 0.81]
+OK    S: fits forcing alpha_inf = 0 have rms 35 to 532 times that of the same form with alpha_inf free, and 130 to 1474 times the best free fit
+   E-odd(C2)  N >= 63 ( 9 pts) a+b/N+c/N^2                          alpha_inf 0.7391  rms 4.4e-06
+   E-odd(C2)  N >= 63 ( 9 pts) a+b/N+c/N^2+d/N^3                    alpha_inf 0.7236  rms 1.4e-07
+   E-odd(C2)  N >= 63 ( 9 pts) a+b*N^-p                             alpha_inf 0.7394  rms 4.4e-06
+   E-odd(C2)  N >= 63 ( 9 pts) a+(b ln N + c)/N                     alpha_inf 0.7394  rms 4.4e-06
+   E-odd(C2)  N >= 63 ( 9 pts) a+b/(ln N)^q                         alpha_inf 0.6559  rms 1.4e-06
+   E-odd(C2)  N >= 63 ( 9 pts) b/(ln N)^q [alpha_inf = 0 forced]    alpha_inf 0.0000  rms 3.2e-04
+   E-odd(C2)  N >= 63 ( 9 pts) b*N^-p [alpha_inf = 0 forced]        alpha_inf 0.0000  rms 4.7e-04
+   E-odd(C2)  N >= 53 (14 pts) a+b/N+c/N^2                          alpha_inf 0.7433  rms 2.4e-05
+   E-odd(C2)  N >= 53 (14 pts) a+b/N+c/N^2+d/N^3                    alpha_inf 0.7266  rms 1.3e-06
+   E-odd(C2)  N >= 53 (14 pts) a+b*N^-p                             alpha_inf 0.7482  rms 2.7e-05
+   E-odd(C2)  N >= 53 (14 pts) a+(b ln N + c)/N                     alpha_inf 0.7485  rms 2.7e-05
+   E-odd(C2)  N >= 53 (14 pts) a+b/(ln N)^q                         alpha_inf 0.6608  rms 8.7e-06
+   E-odd(C2)  N >= 53 (14 pts) b/(ln N)^q [alpha_inf = 0 forced]    alpha_inf 0.0000  rms 1.0e-03
+   E-odd(C2)  N >= 53 (14 pts) b*N^-p [alpha_inf = 0 forced]        alpha_inf 0.0000  rms 1.5e-03
+   E-odd(C2)  N >= 40 (20 pts) a+b/N+c/N^2                          alpha_inf 0.7504  rms 1.2e-04
+   E-odd(C2)  N >= 40 (20 pts) a+b/N+c/N^2+d/N^3                    alpha_inf 0.7310  rms 8.9e-06
+   E-odd(C2)  N >= 40 (20 pts) a+b*N^-p                             alpha_inf 0.7633  rms 1.5e-04
+   E-odd(C2)  N >= 40 (20 pts) a+(b ln N + c)/N                     alpha_inf 0.7659  rms 1.5e-04
+   E-odd(C2)  N >= 40 (20 pts) a+b/(ln N)^q                         alpha_inf 0.6700  rms 5.2e-05
+   E-odd(C2)  N >= 40 (20 pts) b/(ln N)^q [alpha_inf = 0 forced]    alpha_inf 0.0000  rms 3.2e-03
+   E-odd(C2)  N >= 40 (20 pts) b*N^-p [alpha_inf = 0 forced]        alpha_inf 0.0000  rms 4.7e-03
+OK    E-odd(C2): every free fit gives alpha_inf in [0.656, 0.766], inside [0.64, 0.81]
+OK    E-odd(C2): fits forcing alpha_inf = 0 have rms 32 to 231 times that of the same form with alpha_inf free, and 356 to 3438 times the best free fit
+
+7. The searches of Section 4.2: stored end points  (11 s)
+OK    random walk on Z, N = 9: 3 distinct local minima of alpha (2.3000208434, 5.2557582423, 5.7554694090), landings 50+32+91; each a collapse without rotation; least 2.3000208434
+OK    random walk on Z, N = 10: 2 distinct local minima of alpha (2.0913751011, 4.4051046186), landings 41+140; each a collapse without rotation; least 2.0913751011
+OK    minimization of P at alpha = 2, N = 9: local minima 0.0675758057, 0.2611735311, 0.2631798720, least 0.0675758057 > 0; each a collapse at alpha = 2 with that P
+OK    minimization of P at alpha = 2, N = 10: local minima 0.0237078013, 0.2190693120, 0.2208918874, least 0.0237078013 > 0; each a collapse at alpha = 2 with that P
+OK    continuation in alpha of the 18 recorded P-minima for N = 8, 9, 10 (alpha = 0, 1, 2) up to P = 0, then min alpha on Z: end values 2.0913751011, 2.3000208434, 2.5993690531, 4.4051046186, 5.2557582423, 5.7554694090, 8.0863308796; the least for each N is the S threshold
+OK    vortex removal from the alpha = 2, N = 11 collapse: all 9 weak vortices lead to alpha* = 2.0913751011 (the N = 10 threshold); the remaining ten form a collapse without rotation there
+OK    C2-symmetric reduced system (centre + 5 pairs): N = 11, least alpha found 3.7369117731; a collapse without rotation (residual 8.5e-15), C2 defect 1.2e-16
+OK    C2-symmetric reduced system (centre + 4 pairs): N = 9, least alpha found 5.7554694090; a collapse without rotation (residual 4.3e-15), C2 defect 1.3e-16
+OK    C2-symmetric reduced system (5 pairs): N = 10, least alpha found 4.9340170330; a collapse without rotation (residual 4.2e-15), C2 defect 1.2e-16
+OK    C2-symmetric reduced system (centre + 6 pairs): N = 13, least alpha found 2.8803403266; a collapse without rotation (residual 8.4e-15), C2 defect 1.2e-16
+OK    C2-symmetric reduced system (6 pairs): N = 12, least alpha found 3.3600026412; a collapse without rotation (residual 6.1e-15), C2 defect 1.2e-16
+   four vortices (FAILED to give a clean threshold): P reaches 0 near alpha = 14.63 (residual 6.5e-15), where the three weaker circulations are 1.0e-06, 4.4e-06, 6.5e-06 times the strongest
+OK    four vortices: at the end of the continuation three circulations are below 1e-5 of the fourth (a strong vortex with near-tracers)
+
+46 checks, 0 failed  (11 s)

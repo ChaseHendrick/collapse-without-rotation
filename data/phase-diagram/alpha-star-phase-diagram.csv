@@ -1,0 +1,121 @@
+N,family,alpha_star,is_min_over_families,recorded_bracket_lo,recorded_bracket_hi,symmetry,closest_pair_over_size,circulation_span,redHess_min,source
+5,S,5.8442984558,1,,,none,0.2261,279.1,9.79,"continuation of the alpha=2 least minimum (same family as S at N=9,10)"
+6,S,3.9033151082,1,,,none,0.1617,97.75,2.73,"continuation of the alpha=2 least minimum (same family as S at N=9,10)"
+7,S,3.0667922324,1,,,none,0.1265,61.54,1.16,"continuation of the alpha=2 least minimum (same family as S at N=9,10)"
+8,S,2.5993690531,1,,,none,0.1027,51.39,0.616,"continuation of the alpha=2 least minimum (same family as S at N=9,10)"
+9,S,2.3000208434,1,2.3,2.3000976562499997,none,0.08745,45.05,0.376,"recorded SQG-family threshold, polished (KKT)"
+10,S,2.0913751011,1,2.0913085937500004,2.0914062500000004,none,0.07517,42.34,0.252,"recorded SQG-family threshold, polished (KKT)"
+11,S,1.9372878365,1,1.9372070312500007,1.9373046875000008,none,0.06679,40.67,0.18,"recorded SQG-family threshold, polished (KKT)"
+12,S,1.8186003829,1,1.8185546875000005,1.8186523437500006,none,0.05929,39.65,0.135,"recorded SQG-family threshold, polished (KKT)"
+13,E-odd(C2),2.8803403266,0,2.880273437499998,2.880371093749998,C2 (centre + pairs),0.1475,12.61,0.0547,"recorded Euler-family threshold, polished (KKT)"
+13,S,1.7242055885,1,1.7241210937500004,1.7242187500000006,none,0.05388,39.44,0.105,"recorded SQG-family threshold, polished (KKT)"
+14,E-even,2.6072694619,0,2.6072265624999984,2.6073242187499988,none,0.1218,11.77,0.0457,"recorded Euler-family threshold, polished (KKT)"
+14,S,1.6472173016,1,1.6471679687500007,1.6472656250000006,none,0.04895,39.25,0.0843,"recorded SQG-family threshold, polished (KKT)"
+15,E-odd(C2),2.4116505438,0,2.4116210937499996,2.4117187499999995,C2 (centre + pairs),0.122,9.646,0.0393,"recorded Euler-family threshold, polished (KKT)"
+15,S,1.5831373323,1,1.5831054687500008,1.5832031250000007,none,0.04511,39.52,0.0691,"recorded SQG-family threshold, polished (KKT)"
+16,E-even,2.2453024599,0,2.24521484375,2.2453125,none,0.1048,12.05,0.0439,"recorded Euler-family threshold, polished (KKT)"
+16,S,1.5289016622,1,1.5288085937500004,1.5289062500000004,none,0.04168,39.86,0.0577,"recorded SQG-family threshold, polished (KKT)"
+17,E-odd(C2),2.1166919934,0,2.1166015625000005,2.1166992187500004,C2 (centre + pairs),0.105,10.47,0.0341,"recorded Euler-family threshold, polished (KKT)"
+17,S,1.4823502002,1,1.4823242187500005,1.4824218750000004,none,0.03881,40.26,0.0491,"recorded SQG-family threshold, polished (KKT)"
+18,E-even,2.0048200024,0,2.004785156250001,2.004882812500001,none,0.09051,12.45,0.0367,"recorded Euler-family threshold, polished (KKT)"
+18,S,1.4419157286,1,1.4418945312500004,1.4419921875000006,none,0.03629,40.9,0.0422,"recorded SQG-family threshold, polished (KKT)"
+19,E-odd(C2),1.9139119065,0,1.9138671875000008,1.913964843750001,C2 (centre + pairs),0.09078,11.69,0.0288,"recorded Euler-family threshold, polished (KKT)"
+19,S,1.4064331163,1,1.4063476562500004,1.4064453125000005,none,0.03406,41.48,0.0368,"recorded SQG-family threshold, polished (KKT)"
+20,E-even,1.8334710349,0,1.833398437500001,1.8334960937500009,none,0.08083,13.45,0.0302,"recorded Euler-family threshold, polished (KKT)"
+20,S,1.3750178150,1,1.3750000000000004,1.3750976562500004,none,0.03213,42.19,0.0324,"recorded SQG-family threshold, polished (KKT)"
+21,E-odd(C2),1.7657739289,0,1.7657226562500008,1.765820312500001,C2 (centre + pairs),0.08107,12.7,0.0241,"recorded Euler-family threshold, polished (KKT)"
+21,S,1.3469859498,1,1.3469726562500002,1.3470703125000003,none,0.03035,42.94,0.0288,"recorded SQG-family threshold, polished (KKT)"
+22,E-even,1.7050806419,0,1.7050781250000009,1.7051757812500008,none,0.07187,14.31,0.0251,"recorded Euler-family threshold, polished (KKT)"
+22,S,1.3218002803,1,1.32177734375,1.3218750000000001,none,0.02883,43.66,0.0257,"recorded SQG-family threshold, polished (KKT)"
+23,E-odd(C2),1.6526620940,0,1.652636718750001,1.652734375000001,C2 (centre + pairs),0.07207,13.82,0.0205,"recorded Euler-family threshold, polished (KKT)"
+23,S,1.2990327566,1,1.2990234375000003,1.2991210937500002,none,0.02737,44.51,0.0232,"recorded SQG-family threshold, polished (KKT)"
+24,E-even,1.6051784221,0,1.6051757812500007,1.6052734375000006,none,0.06534,15.31,0.0212,"recorded Euler-family threshold, polished (KKT)"
+24,S,1.2783380091,1,1.2783203125000004,1.2784179687500004,none,0.02613,45.32,0.021,"recorded SQG-family threshold, polished (KKT)"
+25,E-odd(C2),1.5633455161,0,1.5632812500000006,1.5633789062500005,C2 (centre + pairs),0.06553,14.93,0.0176,"recorded Euler-family threshold, polished (KKT)"
+25,S,1.2594342181,1,1.2593750000000001,1.2594726562500003,none,0.02493,46.16,0.0192,"recorded SQG-family threshold, polished (KKT)"
+26,E-even,1.5251327892,0,1.5250976562500007,1.5251953125000008,none,0.05953,16.34,0.0181,"recorded Euler-family threshold, polished (KKT)"
+26,S,1.2420890714,1,1.2419921875000004,1.2420898437500005,none,0.02387,47.05,0.0176,"recorded SQG-family threshold, polished (KKT)"
+27,E-odd(C2),1.4909358295,0,1.4909179687500007,1.4910156250000006,C2 (centre + pairs),0.05968,15.99,0.0152,"recorded Euler-family threshold, polished (KKT)"
+27,S,1.2261092945,1,1.22607421875,1.226171875,none,0.02288,47.9,0.0162,"recorded SQG-family threshold, polished (KKT)"
+28,E-even,1.4594814582,0,1.4594726562500004,1.4595703125000006,none,0.05483,17.32,0.0156,"recorded Euler-family threshold, polished (KKT)"
+28,S,1.2113327372,1,1.211328125,1.21142578125,none,0.02198,48.81,0.0149,"recorded SQG-family threshold, polished (KKT)"
+29,E-odd(C2),1.4309746870,0,1.4309570312500006,1.4310546875000008,C2 (centre + pairs),0.05496,17.15,0.0134,"recorded Euler-family threshold, polished (KKT)"
+29,S,1.1976223151,1,1.1975585937500002,1.19765625,none,0.02115,49.72,0.0139,"recorded SQG-family threshold, polished (KKT)"
+30,E-even,1.4046008157,0,1.4045898437500006,1.4046875000000005,none,0.05077,18.43,0.0137,"recorded Euler-family threshold, polished (KKT)"
+30,S,1.1848613165,1,1.1847656250000003,1.1848632812500002,none,0.02037,50.61,0.0129,"recorded SQG-family threshold, polished (KKT)"
+31,E-asym,1.3802024711,0,,,none,0.04713,19.66,0.0129,new: Z-growth from Euler N=30 (lost C2)
+31,E-odd(C2),1.3804492082,0,,,C2 (centre + pairs),0.05087,18.21,0.00165,new: C2 pair growth (reduced symmetric system)
+31,S,1.1729497291,1,1.1729492187500004,1.1730468750000003,none,0.01966,51.55,0.012,"recorded SQG-family threshold, polished (KKT)"
+32,E-asym,1.3576188012,0,,,none,0.04406,20.83,0.0117,new: Z-growth from Euler N=30 (lost C2)
+32,S,1.1618013368,1,1.1617187500000001,1.1618164062500003,none,0.01898,52.46,0.0113,"recorded SQG-family threshold, polished (KKT)"
+33,E-asym,1.3360243705,0,,,none,0.03871,23.36,0.0122,new: Z-growth from Euler N=30 (lost C2)
+33,E-odd(C2),1.3372499136,0,,,C2 (centre + pairs),0.04732,19.38,0.00127,new: C2 pair growth (reduced symmetric system)
+33,S,1.1513414029,1,1.15126953125,1.1513671875000002,none,0.01836,53.4,0.0106,"recorded SQG-family threshold, polished (KKT)"
+34,E-asym,1.3167051869,0,,,none,0.03648,24.53,0.0116,new: Z-growth from Euler N=30 (lost C2)
+34,S,1.1415048076,1,1.14150390625,1.1416015625000002,none,0.01776,54.35,0.00996,"recorded SQG-family threshold, polished (KKT)"
+35,E-asym,1.2987800041,0,,,none,0.03457,25.73,0.011,new: Z-growth from Euler N=30 (lost C2)
+35,E-odd(C2),1.2998554795,0,,,C2 (centre + pairs),0.04431,20.49,0.000993,new: C2 pair growth (reduced symmetric system)
+35,S,1.1322345372,1,1.1322265625,1.13232421875,none,0.01722,55.27,0.00939,"recorded SQG-family threshold, polished (KKT)"
+36,E-asym,1.2821113853,0,,,none,0.03282,26.86,0.0105,new: Z-growth from Euler N=30 (lost C2)
+36,S,1.1234804511,1,1.1234375,1.12353515625,none,0.01669,56.23,0.00888,"recorded SQG-family threshold, polished (KKT)"
+37,E-asym,1.2665769039,0,,,none,0.03123,28.06,0.00996,new: Z-growth from Euler N=30 (lost C2)
+37,E-odd(C2),1.2671408719,0,,,C2 (centre + pairs),0.04154,21.6,0.000788,new: C2 pair growth (reduced symmetric system)
+37,S,1.1151982678,1,1.11513671875,1.115234375,none,0.01621,57.18,0.00841,"recorded SQG-family threshold, polished (KKT)"
+38,E-asym,1.2520677545,0,,,none,0.02983,29.2,0.00934,new: Z-growth from Euler N=30 (lost C2)
+38,S,1.1073487266,1,1.10732421875,1.107421875,none,0.01575,58.12,0.00798,"recorded SQG-family threshold, polished (KKT)"
+39,E-odd(C2),1.2382559947,0,,,C2 (centre + pairs),0.03923,22.75,0.000633,new: C2 pair growth (reduced symmetric system)
+39,S,1.0998968888,1,1.0998046875,1.0999023437500002,none,0.01532,59.09,0.00758,"recorded SQG-family threshold, polished (KKT)"
+40,S,1.0928115542,1,1.0927734375,1.09287109375,none,0.0149,60.04,0.00722,"recorded SQG-family threshold, polished (KKT)"
+41,E-odd(C2),1.2125463727,0,,,C2 (centre + pairs),0.03701,23.84,0.000514,new: C2 pair growth (reduced symmetric system)
+41,S,1.0860647690,1,1.08603515625,1.0861328125,none,0.01451,61,0.00689,"recorded SQG-family threshold, polished (KKT)"
+42,S,1.0796314106,1,1.0795898437500004,1.0796875000000004,none,0.01415,61.97,0.00657,"recorded SQG-family threshold, polished (KKT)"
+43,E-odd(C2),1.1894998103,0,,,C2 (centre + pairs),0.03514,25,0.000423,new: C2 pair growth (reduced symmetric system)
+43,S,1.0734888346,1,1.0734375000000003,1.0735351562500002,none,0.01379,62.91,0.00629,"recorded SQG-family threshold, polished (KKT)"
+44,S,1.0676165734,1,1.0675781250000003,1.0676757812500002,none,0.01346,63.89,0.00602,"recorded SQG-family threshold, polished (KKT)"
+45,E-odd(C2),1.1687096145,0,,,C2 (centre + pairs),0.03337,26.12,0.000351,new: C2 pair growth (reduced symmetric system)
+45,S,1.0619960780,1,1.0619140625,1.06201171875,none,0.01314,64.85,0.00577,"recorded SQG-family threshold, polished (KKT)"
+46,S,1.0566104966,1,1.05654296875,1.056640625,none,0.01284,65.81,0.00554,"recorded SQG-family threshold, polished (KKT)"
+47,E-odd(C2),1.1498486763,0,,,C2 (centre + pairs),0.03182,27.24,0.000294,new: C2 pair growth (reduced symmetric system)
+47,S,1.0514444821,1,1.0513671875000001,1.0514648437500003,none,0.01254,66.79,0.00532,"recorded SQG-family threshold, polished (KKT)"
+48,S,1.0464840263,1,1.04638671875,1.046484375,none,0.01227,67.75,0.00512,"recorded SQG-family threshold, polished (KKT)"
+49,E-odd(C2),1.1326508441,0,,,C2 (centre + pairs),0.03038,28.39,0.000248,new: C2 pair growth (reduced symmetric system)
+49,S,1.0417163157,1,1.0416992187500003,1.0417968750000002,none,0.012,68.71,0.00493,"recorded SQG-family threshold, polished (KKT)"
+50,S,1.0371296050,1,1.037109375,1.03720703125,none,0.01174,69.69,0.00475,"recorded SQG-family threshold, polished (KKT)"
+51,E-odd(C2),1.1168973019,0,,,C2 (centre + pairs),0.02907,29.49,0.000211,new: C2 pair growth (reduced symmetric system)
+51,S,1.0327131069,1,1.0326171874999999,1.03271484375,none,0.0115,70.64,0.00458,"recorded SQG-family threshold, polished (KKT)"
+52,S,1.0284568953,1,1.02841796875,1.0285156249999998,none,0.01127,71.62,0.00442,"recorded SQG-family threshold, polished (KKT)"
+53,E-odd(C2),1.1024064493,0,,,C2 (centre + pairs),0.02788,30.65,0.000181,new: C2 pair growth (reduced symmetric system)
+53,S,1.0243518201,1,1.02431640625,1.0244140625,none,0.01104,72.59,0.00428,"recorded SQG-family threshold, polished (KKT)"
+54,S,1.0203894318,1,1.0203124999999997,1.0204101562499996,none,0.01082,73.55,0.00413,"recorded SQG-family threshold, polished (KKT)"
+55,E-odd(C2),1.0890262769,0,,,C2 (centre + pairs),0.02676,31.77,0.000156,new: C2 pair growth (reduced symmetric system)
+55,S,1.0165619150,1,1.01650390625,1.0166015625,none,0.01062,74.53,0.004,"recorded SQG-family threshold, polished (KKT)"
+56,S,1.0128620293,1,1.01279296875,1.0128906249999998,none,0.01042,75.49,0.00387,"recorded SQG-family threshold, polished (KKT)"
+57,E-odd(C2),1.0766285454,0,,,C2 (centre + pairs),0.02576,32.9,0.000135,new: C2 pair growth (reduced symmetric system)
+57,S,1.0092830565,1,1.00927734375,1.009375,none,0.01023,76.46,0.00376,"recorded SQG-family threshold, polished (KKT)"
+58,S,1.0058187540,1,1.00576171875,1.005859375,none,0.01004,77.43,0.00364,"recorded SQG-family threshold, polished (KKT)"
+59,E-odd(C2),1.0651042900,0,,,C2 (centre + pairs),0.02479,34.04,0.000118,new: C2 pair growth (reduced symmetric system)
+59,S,1.0024633131,1,1.00244140625,1.0025390625000001,none,0.009861,78.39,0.00353,"recorded SQG-family threshold, polished (KKT)"
+60,S,0.9992113209,1,,,none,0.009687,79.37,0.00343,new: Z-growth by tracer insertion (grow_z_a1_from59.json)
+61,E-odd(C2),1.0543603103,0,,,C2 (centre + pairs),0.02392,35.16,0.000103,new: C2 pair growth (reduced symmetric system)
+61,S,0.9960577273,1,,,none,0.00952,80.34,0.00333,new: Z-growth by tracer insertion (growfast_a1_sqg_part1.json)
+62,S,0.9929978141,1,,,none,0.00936,81.3,0.00324,new: Z-growth by tracer insertion (growfast_a1_sqg_part1.json)
+63,E-odd(C2),1.0443164024,0,,,C2 (centre + pairs),0.02309,36.3,9.09e-05,new: C2 pair growth (reduced symmetric system)
+63,S,0.9900271686,1,,,none,0.009203,82.27,0.00315,new: Z-growth by tracer insertion (growfast_a1_sqg_part1.json)
+64,S,0.9871416582,1,,,none,0.009054,83.24,0.00307,new: Z-growth by tracer insertion (growfast_a1_sqg_part1.json)
+65,E-odd(C2),1.0349031556,0,,,C2 (centre + pairs),0.02233,37.44,8.04e-05,new: C2 pair growth (reduced symmetric system)
+65,S,0.9843374085,1,,,none,0.008906,84.2,0.00299,new: Z-growth by tracer insertion (growfast_a1_sqg2.json)
+66,S,0.9816107835,1,,,none,0.008767,85.18,0.00291,new: Z-growth by tracer insertion (growfast_a1_sqg2.json)
+67,E-odd(C2),1.0260601847,0,,,C2 (centre + pairs),0.02161,38.56,7.14e-05,new: C2 pair growth (reduced symmetric system)
+67,S,0.9789583666,1,,,none,0.008628,86.14,0.00284,new: Z-growth by tracer insertion (growfast_a1_sqg2.json)
+68,S,0.9763769447,1,,,none,0.008496,87.11,0.00276,new: Z-growth by tracer insertion (growfast_a1_sqg2.json)
+69,E-odd(C2),1.0177346987,0,,,C2 (centre + pairs),0.02093,39.7,6.36e-05,new: C2 pair growth (reduced symmetric system)
+69,S,0.9738634928,1,,,none,0.008367,88.07,0.0027,new: Z-growth by tracer insertion (growfast_a1_sqg2.json)
+70,S,0.9714151600,1,,,none,0.008242,89.03,0.00263,new: Z-growth by tracer insertion (growfast_a1_sqg2.json)
+71,E-odd(C2),1.0098803356,0,,,C2 (centre + pairs),0.02031,40.82,5.69e-05,new: C2 pair growth (reduced symmetric system)
+71,S,0.9690292576,1,,,none,0.008121,90.01,0.00257,new: Z-growth by tracer insertion (growfast_a1_sqg2.json)
+72,S,0.9667032469,1,,,none,0.008003,90.97,0.00251,new: Z-growth by tracer insertion (growfast_a1_sqg2.json)
+73,E-odd(C2),1.0024562050,0,,,C2 (centre + pairs),0.0197,41.96,5.11e-05,new: C2 pair growth (reduced symmetric system)
+73,S,0.9644347291,1,,,none,0.007889,91.93,0.00245,new: Z-growth by tracer insertion (growfast_a1_sqg2.json)
+75,E-odd(C2),0.9954260983,1,,,C2 (centre + pairs),0.01915,43.1,4.61e-05,new: C2 pair growth (reduced symmetric system)
+77,E-odd(C2),0.9887578317,1,,,C2 (centre + pairs),0.01861,44.21,4.16e-05,new: C2 pair growth (reduced symmetric system)
+79,E-odd(C2),0.9824226979,1,,,C2 (centre + pairs),0.01811,45.36,3.77e-05,new: C2 pair growth (reduced symmetric system)

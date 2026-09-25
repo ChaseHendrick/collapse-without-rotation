@@ -1,0 +1,19 @@
+Remainders of the weighted sums (A'), (B) and of the TRE defect (W) on random configurations of K(n, c), c = 0.3
+gamma=1e-2: max|R_A|/gamma^2 = 89.311   max|R_B|/gamma = 44.717   max|w_k - F_k - T|/gamma = 13.03   control max|R|/gamma^2 = 2638.9
+gamma=1e-3: max|R_A|/gamma^2 = 89.058   max|R_B|/gamma = 45.43   max|w_k - F_k - T|/gamma = 12.89   control max|R|/gamma^2 = 26498.0
+gamma=1e-4: max|R_A|/gamma^2 = 89.037   max|R_B|/gamma = 45.501   max|w_k - F_k - T|/gamma = 12.876   control max|R|/gamma^2 = 2.6509e+5
+gamma=1e-5: max|R_A|/gamma^2 = 89.035   max|R_B|/gamma = 45.508   max|w_k - F_k - T|/gamma = 12.874   control max|R|/gamma^2 = 2.6511e+6
+gamma=1e-6: max|R_A|/gamma^2 = 89.035   max|R_B|/gamma = 45.509   max|w_k - F_k - T|/gamma = 12.874   control max|R|/gamma^2 = 2.6511e+7
+gamma=1e-7: max|R_A|/gamma^2 = 89.035   max|R_B|/gamma = 45.509   max|w_k - F_k - T|/gamma = 12.874   control max|R|/gamma^2 = 2.6511e+8
+OK    (A') remainder / gamma^2 does not grow as gamma -> 0 (150 configurations, 1-3 clusters of 1-4 vortices, mixed signs)
+OK    (B) remainder / gamma does not grow as gamma -> 0
+OK    (W) w_k = T + F_k + O(gamma), so at a collapse (F = 0) every cluster is a translating relative equilibrium up to O(gamma)
+OK    negative control (drop gamma D/Z^2 from (A')): remainder / gamma^2 grows like 1/gamma
+
+Step 1 and part (d): the explicit constants at the largest admissible gamma
+OK    400 random configurations with n = 1..40 weak vortices placed
+OK    |z_c| <= 4 n gamma/c^2 (largest ratio 0.272)
+OK    singleton: |e1| <= 1.2 n gamma/c^3 (largest ratio 0.8772), within 4 n gamma/c^3 used in part (d)
+OK    singleton: |e2| <= n gamma/c^3 (largest ratio 0.4603), for n up to 40
+
+8 checks, 0 failed

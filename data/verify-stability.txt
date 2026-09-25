@@ -1,0 +1,35 @@
+Linear stability and perturbed integration of the collapses without rotation (NUMERICAL, binary64)
+
+--- alpha2-n11: N = 11, alpha = 2; Newton polish residual 1.2e-14  (0 s)
+   closest pair / size 0.06868, circulation span 72.8, relative angular impulse -2.5e-17
+OK    alpha2-n11: the six symmetry exponents 0, 2 beta = 4, 1, 1, 2, -alpha = -2 are present (largest error 4.1e-14)
+OK    alpha2-n11: the exponents pair as k + k' = 2 (Hamiltonian structure), largest defect 9.1e-13
+OK    alpha2-n11: 16 shape modes, 8 unstable (Re k > 0), all real (0 complex); largest k = 258.15, least positive k = 8.43
+   unstable k: 258.15, 223.37, 182.19, 122.76, 81.99, 47.92, 24.87, 8.43
+   growth at the largest exponent alone from 1e-6 to 1e-2 predicts departure at size r = 1e4^(-1/k_max) = 0.9650
+   integration pert 0e+00 seed 0 to 1.50 t_c: departs at t/t_c 0.3950, size 0.8819 (exact 0.8819), rotation 3.8e-05 rad; least size 0.7959 at t/t_c 0.987; final size 0.8656; largest |rotation| 0.265; closest pair / R0 0.075; drift H 5e-11, M 5e-16, I 5e-14  (2 s)
+   integration pert 1e-06 seed 1 to 1.50 t_c: departs at t/t_c 0.1770, size 0.9524 (exact 0.9525), rotation 4.1e-05 rad; least size 0.8506 at t/t_c 0.590; final size 0.9010; largest |rotation| 0.263; closest pair / R0 0.0854; drift H 2e-11, M 4e-16, I 2e-14  (2 s)
+   integration pert 1e-06 seed 2 to 1.50 t_c: departs at t/t_c 0.1752, size 0.9529 (exact 0.9530), rotation 2.3e-06 rad; least size 0.8276 at t/t_c 0.612; final size 0.9957; largest |rotation| 0.344; closest pair / R0 0.0915; drift H 3e-11, M 6e-16, I 2e-14  (2 s)
+   integration pert 1e-06 seed 3 to 1.50 t_c: departs at t/t_c 0.1650, size 0.9558 (exact 0.9559), rotation 2.3e-05 rad; least size 0.8589 at t/t_c 0.553; final size 0.9353; largest |rotation| 0.283; closest pair / R0 0.0945; drift H 1e-11, M 4e-16, I 2e-14  (2 s)
+OK    alpha2-n11: every integration completes, conserves H, the impulse and the angular impulse (largest relative drifts 5e-11, 6e-16, 5e-14)
+OK    alpha2-n11: every run departs from the self-similar collapse; the perturbed ones at sizes 0.9524, 0.9529, 0.9558
+OK    alpha2-n11: until departure the motion follows the collapse without turning: |rotation| < 1e-4 rad in every run (largest 4.1e-05)
+OK    alpha2-n11: after departure no perturbed run gets below 0.828 of its initial size, and no close pair forms (closest pair / R0 >= 0.0854)
+
+--- sqg-n60: N = 60, alpha = 1; Newton polish residual 6.2e-13  (7 s)
+   closest pair / size 0.009409, circulation span 82.65, relative angular impulse -3.4e-17
+OK    sqg-n60: the six symmetry exponents 0, 2 beta = 3, 1, 1, 2, -alpha = -1 are present (largest error 6.3e-13)
+OK    sqg-n60: the exponents pair as k + k' = 2 (Hamiltonian structure), largest defect 3.5e-11
+OK    sqg-n60: 114 shape modes, 57 unstable (Re k > 0), all real (0 complex); largest k = 4273.65, least positive k = 5.04
+   unstable k: 4273.65, 4103.82, 3938.47, 3777.55, 3620.99, 3468.74, 3320.72, 3176.88 ...
+   growth at the largest exponent alone from 1e-6 to 1e-2 predicts departure at size r = 1e4^(-1/k_max) = 0.9978
+   integration pert 0e+00 seed 0 to 1.20 t_c: departs at t/t_c 0.0492, size 0.9834 (exact 0.9833), rotation -7.9e-05 rad; least size 0.8946 at t/t_c 0.412; final size 0.9491; largest |rotation| 0.175; closest pair / R0 0.00636; drift H 1e-10, M 3e-15, I 4e-15  (35 s)
+   integration pert 1e-06 seed 1 to 1.20 t_c: departs at t/t_c 0.0273, size 0.9908 (exact 0.9908), rotation -7.4e-05 rad; least size 0.9012 at t/t_c 0.474; final size 1.0545; largest |rotation| 0.233; closest pair / R0 0.00612; drift H 1e-10, M 2e-15, I 4e-15  (31 s)
+   integration pert 1e-06 seed 2 to 1.20 t_c: departs at t/t_c 0.0252, size 0.9915 (exact 0.9915), rotation -7.0e-05 rad; least size 0.8873 at t/t_c 1.199; final size 0.8873; largest |rotation| 0.199; closest pair / R0 0.00592; drift H 1e-10, M 2e-15, I 5e-15  (33 s)
+   integration pert 1e-06 seed 3 to 1.20 t_c: departs at t/t_c 0.0252, size 0.9915 (exact 0.9915), rotation -5.9e-05 rad; least size 0.9039 at t/t_c 0.501; final size 0.9270; largest |rotation| 0.150; closest pair / R0 0.00503; drift H 3e-10, M 4e-15, I 6e-15  (45 s)
+OK    sqg-n60: every integration completes, conserves H, the impulse and the angular impulse (largest relative drifts 3e-10, 4e-15, 6e-15)
+OK    sqg-n60: every run departs from the self-similar collapse; the perturbed ones at sizes 0.9908, 0.9915, 0.9915
+OK    sqg-n60: until departure the motion follows the collapse without turning: |rotation| < 1e-4 rad in every run (largest 7.9e-05)
+OK    sqg-n60: after departure no perturbed run gets below 0.887 of its initial size, and no close pair forms (closest pair / R0 >= 0.00503)
+
+14 checks, 0 failed  (152 s)

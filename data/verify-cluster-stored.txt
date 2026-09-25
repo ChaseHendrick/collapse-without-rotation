@@ -1,0 +1,29 @@
+Independent recheck of 21 stored collapses (60 digits; stored values have 40)
+OK    pair                                                    gamma 1e-2  P - sqrt3/2 = 0.00010427726  residual 1.99e-40  sum G_iG_j -1.88e-41  impulse 1.89e-40  in K(n, c) for c <= 0.892; nuhat - (1 - gamma^2 nu^2/S2) = -4.22e-39, (nuhat - 1)/(-gamma^2 S2/4) = 0.9999197273
+OK    pair                                                    gamma 1e-3  P - sqrt3/2 = 1.0512741e-6  residual 1.99e-40  sum G_iG_j 6.42e-42  impulse 2.02e-40  in K(n, c) for c <= 0.8992; nuhat - (1 - gamma^2 nu^2/S2) = 1.43e-38, (nuhat - 1)/(-gamma^2 S2/4) = 0.9999991907
+OK    pair                                                    gamma 1e-4  P - sqrt3/2 = 1.0521262e-8  residual 1.1e-41  sum G_iG_j 2.39e-41  impulse 3.32e-42  in K(n, c) for c <= 0.8999; nuhat - (1 - gamma^2 nu^2/S2) = 5.3e-37, (nuhat - 1)/(-gamma^2 S2/4) = 0.9999999919
+OK    triple (+,+,-)                                          gamma 1e-2  P - sqrt3/2 = -0.0079999914  residual 3.0e-38  sum G_iG_j 1.12e-40  impulse -4.64e-40  in K(n, c) for c <= 0.6; nuhat - (1 - gamma^2 nu^2/S2) = 1.87e-38, (nuhat - 1)/(-gamma^2 S2/4) = 0.9998071145
+OK    triple (+,+,-)                                          gamma 1e-3  P - sqrt3/2 = -0.00084346811  residual 2.26e-37  sum G_iG_j -1.4e-40  impulse 2.8e-40  in K(n, c) for c <= 0.6; nuhat - (1 - gamma^2 nu^2/S2) = -2.29e-37, (nuhat - 1)/(-gamma^2 S2/4) = 0.9999980431
+OK    triple (+,+,-)                                          gamma 1e-4  P - sqrt3/2 = -8.4786265e-5  residual 2.81e-36  sum G_iG_j -4.13e-41  impulse 4.17e-40  in K(n, c) for c <= 0.6; nuhat - (1 - gamma^2 nu^2/S2) = -6.74e-37, (nuhat - 1)/(-gamma^2 S2/4) = 0.9999999804
+OK    triple (+,-,+)                                          gamma 1e-2  P - sqrt3/2 = -0.0067852267  residual 9.17e-39  sum G_iG_j -7.21e-42  impulse -2.08e-41  in K(n, c) for c <= 0.513; nuhat - (1 - gamma^2 nu^2/S2) = -1.47e-39, (nuhat - 1)/(-gamma^2 S2/4) = 0.9998703644
+OK    triple (+,-,+)                                          gamma 1e-3  P - sqrt3/2 = -0.00069624202  residual 8.16e-38  sum G_iG_j -1.76e-41  impulse 6.75e-41  in K(n, c) for c <= 0.5013; nuhat - (1 - gamma^2 nu^2/S2) = -3.55e-38, (nuhat - 1)/(-gamma^2 S2/4) = 0.9999987094
+OK    triple (+,-,+)                                          gamma 1e-4  P - sqrt3/2 = -6.9799631e-5  residual 2.33e-36  sum G_iG_j 4.11e-42  impulse 4.27e-40  in K(n, c) for c <= 0.5001; nuhat - (1 - gamma^2 nu^2/S2) = 8.28e-38, (nuhat - 1)/(-gamma^2 S2/4) = 0.9999999871
+OK    quadruple (+,+,-,-)                                     gamma 1e-2  P - sqrt3/2 = -0.0011027043  residual 3.7e-38  sum G_iG_j 1.37e-40  impulse 5.76e-40  in K(n, c) for c <= 0.5; nuhat - (1 - gamma^2 nu^2/S2) = 2.98e-38, (nuhat - 1)/(-gamma^2 S2/4) = 0.9998429039
+OK    quadruple (+,+,-,-)                                     gamma 1e-3  P - sqrt3/2 = -0.00017009035  residual 2.3e-37  sum G_iG_j 1.3e-40  impulse 4.7e-40  in K(n, c) for c <= 0.5; nuhat - (1 - gamma^2 nu^2/S2) = 2.79e-37, (nuhat - 1)/(-gamma^2 S2/4) = 0.9999984119
+OK    quadruple (+,+,-,-)                                     gamma 1e-4  P - sqrt3/2 = -1.7603642e-5  residual 6.92e-37  sum G_iG_j -4.96e-41  impulse -6.21e-41  in K(n, c) for c <= 0.5; nuhat - (1 - gamma^2 nu^2/S2) = -1.06e-36, (nuhat - 1)/(-gamma^2 S2/4) = 0.9999999841
+OK    quadruple (+,+,+,-)                                     gamma 1e-2  P - sqrt3/2 = -0.01994819  residual 1.74e-38  sum G_iG_j -4.81e-41  impulse 8.42e-41  in K(n, c) for c <= 0.377; nuhat - (1 - gamma^2 nu^2/S2) = -5.52e-39, (nuhat - 1)/(-gamma^2 S2/4) = 0.9995259719
+OK    quadruple (+,+,+,-)                                     gamma 1e-3  P - sqrt3/2 = -0.002108323  residual 2.13e-37  sum G_iG_j -7.55e-41  impulse 2.78e-40  in K(n, c) for c <= 0.371; nuhat - (1 - gamma^2 nu^2/S2) = -8.4e-38, (nuhat - 1)/(-gamma^2 S2/4) = 0.9999951431
+OK    quadruple (+,+,+,-)                                     gamma 1e-4  P - sqrt3/2 = -0.00021196212  residual 1.59e-36  sum G_iG_j -2.84e-41  impulse -4.39e-40  in K(n, c) for c <= 0.3704; nuhat - (1 - gamma^2 nu^2/S2) = -3.14e-37, (nuhat - 1)/(-gamma^2 S2/4) = 0.9999999513
+OK    pair + triple (+,+,-)                                   gamma 1e-2  P - sqrt3/2 = 0.00010579577  residual 1.22e-38  sum G_iG_j 8.25e-41  impulse -7.26e-41  in K(n, c) for c <= 0.6
+OK    pair + triple (+,+,-)                                   gamma 1e-3  P - sqrt3/2 = 1.0024733e-6  residual 4.9e-38  sum G_iG_j 6.75e-41  impulse -2.6e-41  in K(n, c) for c <= 0.6
+OK    pair + triple (+,+,-)                                   gamma 1e-4  P - sqrt3/2 = 9.834693e-9  residual 1.35e-36  sum G_iG_j -6.01e-41  impulse -1.61e-40  in K(n, c) for c <= 0.6
+OK    triple (+,+,-) + quadruple (+,+,-,-) + triple (+,-,+)   gamma 1e-2  P - sqrt3/2 = -0.0011815036  residual 1.42e-38  sum G_iG_j -2.1e-41  impulse -6.95e-41  in K(n, c) for c <= 0.5
+OK    triple (+,+,-) + quadruple (+,+,-,-) + triple (+,-,+)   gamma 1e-3  P - sqrt3/2 = -0.00017076732  residual 2.7e-37  sum G_iG_j -1.81e-41  impulse 8.21e-41  in K(n, c) for c <= 0.5
+OK    triple (+,+,-) + quadruple (+,+,-,-) + triple (+,-,+)   gamma 1e-4  P - sqrt3/2 = -1.7610604e-5  residual 1.64e-36  sum G_iG_j -2.51e-42  impulse -3.27e-41  in K(n, c) for c <= 0.5
+OK    every stored collapse is self-similar: least-squares kappa over all vortices, largest residual 2.81e-36 < 1e-35
+OK    P recomputed independently agrees with the stored value to 2.46e-36
+OK    sum_{i<j} Gamma_i Gamma_j and the angular impulse vanish (relative, largest 5.76e-40)
+OK    every stored collapse lies in K(n, c) for c = 0.3704 (the least over all), with the stored clusters
+OK    P < sqrt3/2 at gamma = 1e-4 exactly for the arrangements with e_C > 0 for every cluster: triple (+,+,-); triple (+,-,+); quadruple (+,+,-,-); quadruple (+,+,+,-); triple (+,+,-) + quadruple (+,+,-,-) + triple (+,-,+)
+
+26 checks, 0 failed

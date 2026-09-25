@@ -1,0 +1,7 @@
+  new local min P 0.2611735311 hmin 0.025 pair 0.265 Gspan 4.87 t 2s
+  new local min P 0.2631798720 hmin 0.0299 pair 0.201 Gspan 6.13 t 10s
+  new local min P 0.0675758057 hmin 0.177 pair 0.0864 Gspan 36.8 t 11s
+N 9 alpha 2.0 attempts 1110 {'land': 358, 'noland': 563, 'degenerate': 66, 'fail': 123, 'zero': 0}
+  P 0.0675758057 x44 hmin 0.177 pair 0.0864 Gspan 36.8
+  P 0.2611735311 x183 hmin 0.025 pair 0.265 Gspan 4.87
+  P 0.2631798720 x131 hmin 0.0299 pair 0.201 Gspan 6.13

@@ -1,0 +1,25 @@
+N 11 alpha 2.0 unknowns 31 equations 22 rank 22 tangent dim 9 sigma_min/sigma_max 7.286e-04
+circulations (normalized, strongest = -1): [-0.0362 -0.0317  0.3236 -0.0262 -0.0472 -0.0308 -1.     -0.0255 -0.0333
+ -0.083  -0.0137]
+|z|: [1.603 1.78  1.72  1.267 0.848 1.086 0.093 1.43  1.941 2.215 2.061]
+dir 0 +1: arclength 2.08  end: max steps                                     pair 0.0728 Gspan 31.3 signs --+--------
+dir 0 -1: arclength 3.23  end: max steps                                     pair 0.0716 Gspan 34.7 signs --+--------
+dir 1 +1: arclength 3.42  end: max steps                                     pair 0.064 Gspan 86.9 signs --+--------
+dir 1 -1: arclength 3.26  end: max steps                                     pair 0.0732 Gspan 31.9 signs --+--------
+dir 2 +1: arclength 2.84  end: max steps                                     pair 0.0734 Gspan 36 signs --+--------
+dir 2 -1: arclength 1.94  end: max steps                                     pair 0.0695 Gspan 24 signs --+--------
+dir 3 +1: arclength 3.90  end: max steps                                     pair 0.073 Gspan 21.7 signs --+--------
+dir 3 -1: arclength 3.19  end: max steps                                     pair 0.0612 Gspan 92 signs --+--------
+dir 4 +1: arclength 3.22  end: max steps                                     pair 0.0608 Gspan 99.4 signs --+--------
+dir 4 -1: arclength 1.99  end: max steps                                     pair 0.0675 Gspan 30.2 signs --+--------
+dir 5 +1: arclength 3.11  end: max steps                                     pair 0.067 Gspan 54.8 signs --+--------
+dir 5 -1: arclength 2.70  end: max steps                                     pair 0.0632 Gspan 70.3 signs --+--------
+dir 6 +1: arclength 3.44  end: max steps                                     pair 0.0595 Gspan 106 signs --+--------
+dir 6 -1: arclength 3.22  end: max steps                                     pair 0.0722 Gspan 33.6 signs --+--------
+dir 7 +1: arclength 3.04  end: max steps                                     pair 0.0757 Gspan 22.8 signs --+--------
+dir 7 -1: arclength 3.22  end: max steps                                     pair 0.0753 Gspan 24.9 signs --+--------
+dir 8 +1: arclength 3.25  end: max steps                                     pair 0.0767 Gspan 23.4 signs --+--------
+dir 8 -1: arclength 3.03  end: max steps                                     pair 0.0691 Gspan 25.4 signs --+--------
+equal-weak search: Iteration limit reached spread 2.331e+00 -> 7.920e-02 residual 2.0e-14 pair 0.0797 Gspan 29.5
+  weak circulations: [-0.034652 -0.036313 -0.034176 -0.040287 -0.03611  -0.033846 -0.038659
+ -0.04478  -0.041525]  strong: [-1.        0.336735]
