@@ -3,7 +3,7 @@
 Each release of this repository is archived on Zenodo with its own DOI. The manuscript is a preprint and has not been
 peer reviewed.
 
-## v1.0.0 (2026-09-25)
+## 1.0.0 (2026-09-25)
 
 **DOI:** [10.5281/zenodo.22969841](https://doi.org/10.5281/zenodo.22969841)
 
