@@ -5,6 +5,8 @@ peer reviewed.
 
 ## v1.0.0 (2026-09-25)
 
+**DOI:** [10.5281/zenodo.22969841](https://doi.org/10.5281/zenodo.22969841)
+
 The first public release of the preprint *Point-Vortex Collapse Without Rotation: A Cluster Mechanism, a Phase
 Diagram and a Continuum Limit*, with the programs that check its results and their output. It is the sequel to
 *Minimal Winding in the Self-Similar Collapse of Point Vortices* (programs and data: doi:10.5281/zenodo.22963796).

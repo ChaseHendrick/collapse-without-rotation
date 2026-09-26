@@ -2,7 +2,7 @@
 
 **Chase Hendrick**, Independent Researcher · [ORCID 0009-0002-9754-6087](https://orcid.org/0009-0002-9754-6087)
 
-**Preprint**, not peer reviewed. It is the sequel to *Minimal Winding in the Self-Similar Collapse of Point Vortices*
+**Preprint**, archived on Zenodo with its programs and data ([doi:10.5281/zenodo.22969841](https://doi.org/10.5281/zenodo.22969841)), not peer reviewed. It is the sequel to *Minimal Winding in the Self-Similar Collapse of Point Vortices*
 ([ChaseHendrick/minimal-winding](https://github.com/ChaseHendrick/minimal-winding)), which it cites as its companion.
 
 **[Read the preprint (PDF, 24 pages)](paper/collapse-without-rotation.pdf)**
@@ -110,7 +110,7 @@ Each verification program exits with an error if any check fails and writes its 
 
 ## Cite
 
-Until the paper has a DOI of its own:
+Until the paper is published in a journal:
 
 ```bibtex
 @misc{hendrick2026collapse,
@@ -118,6 +118,7 @@ Until the paper has a DOI of its own:
   title  = {Point-Vortex Collapse Without Rotation: A Cluster Mechanism, a Phase Diagram and a Continuum Limit},
   year   = {2026},
   note   = {Preprint},
+  doi    = {10.5281/zenodo.22969841},
   url    = {https://github.com/ChaseHendrick/collapse-without-rotation}
 }
 ```
