@@ -1,0 +1,315 @@
+Certified self-similar point-vortex collapses (python 3.11.15, python-flint 0.9.0, mpmath 1.3.0, numpy 2.4.6; Arb at 320 bits)
+
+1. Self-test of the ball automatic differentiation against mpmath (non-rigorous guard against coding errors)
+OK    Euler N = 4, 10 free variables: F, Jacobian and Hessians of the ball AD agree with mpmath; the enclosure over a 1e-3 ball contains F at 20 random points   [|F| 3.79e-96, |J| 2.37e-59, |H| 1.17e-58, containment failures 0]
+OK    Euler N = 5, 10 free variables: F, Jacobian and Hessians of the ball AD agree with mpmath; the enclosure over a 1e-3 ball contains F at 20 random points   [|F| 4.78e-96, |J| 2.43e-59, |H| 1.67e-58, containment failures 0]
+OK    Euler N = 6, 13 free variables: F, Jacobian and Hessians of the ball AD agree with mpmath; the enclosure over a 1e-3 ball contains F at 20 random points   [|F| 9.62e-96, |J| 4.27e-59, |H| 1.96e-58, containment failures 0]
+OK    alpha-model, kappa real, N = 5, alpha = 2: E and its Jacobian agree with mpmath at a random point   [|E| 6.03e-96, |J| 9.12e-59]
+OK    alpha-model, kappa real, N = 4, alpha = 1: E and its Jacobian agree with mpmath at a random point   [|E| 4.08e-96, |J| 3.04e-59]
+OK    alpha-model, kappa real, N = 6, alpha = 2: E and its Jacobian agree with mpmath at a random point   [|E| 5.45e-96, |J| 2.25e-59]
+OK    alpha-model, P free, N = 4, alpha = 1: E, Jacobian and Hessians agree with mpmath; ball enclosure contains 20 random points   [|E| 5.55e-96, |J| 2.99e-59, |H| 1.85e-58, containment failures 0]
+OK    alpha-model, P free, N = 4, alpha = 2: E, Jacobian and Hessians agree with mpmath; ball enclosure contains 20 random points   [|E| 2.19e-96, |J| 4.69e-59, |H| 3.2e-58, containment failures 0]
+
+2. Existence: self-similar collapses of N = 4, 5, 6 vortices with P < sqrt(3)/2 (Krawczyk, rational chart)
+   N = 4: fixed x4 = -314381/100000, G2 = 4801543/500000, G3 = 803737/500000
+OK    N = 4: the 8 real collapse equations have exactly one solution in the box of radius 1e-4   [Newton residual 1.12e-95; at radius 1e-40 ||I - Y J(X)|| <= 2.11e-37, ||Y F(x~)|| <= 2.01e-94]
+OK    N = 4: on the box every Gamma_j != 0, sum Gamma_j != 0, the z_j are distinct and nonzero, each w_j/conj(z_j) contains 2P - i, and sum Gamma_j z_j, S, I contain 0   [sum Gamma [10.02824640711285968866293 +/- 2.18e-24], min |z_j - z_k| >= 0.5719299280, min |z_j| >= 0.1293296671]
+      P in [0.79789678387988074503748659045088937981074482678272, 0.79789678387988074503748659045088937981074482678273]
+OK    N = 4: P < sqrt(3)/2
+      enclosures of the unknowns:
+      x1   [-2.54123686515352879732524457747 +/- 3.49e-30]
+      x2   [0.0624555420753117147259982298393 +/- 3.31e-32]
+      y2   [-0.113249582980226980047031776163 +/- 4.56e-31]
+      x3   [-3.06027243552731096004077436375 +/- 4.57e-30]
+      y3   [0.256070062780765007675138874793 +/- 4.86e-31]
+      y4   [-0.309726117698137864358952917516 +/- 2.75e-31]
+      G4   [-2.18231359288714031133707217359 +/- 4.01e-30]
+      P    [0.797896783879880745037486590451 +/- 1.11e-31]
+   N = 5: fixed x2 = 604919/200000, G2 = -313997/125000, G3 = 3984353/500000, G4 = 352617/250000
+OK    N = 5: the 10 real collapse equations have exactly one solution in the box of radius 1e-4   [Newton residual 4.04e-94; at radius 1e-40 ||I - Y J(X)|| <= 2.74e-37, ||Y F(x~)|| <= 2.25e-94]
+OK    N = 5: on the box every Gamma_j != 0, sum Gamma_j != 0, the z_j are distinct and nonzero, each w_j/conj(z_j) contains 2P - i, and sum Gamma_j z_j, S, I contain 0   [sum Gamma [8.560387261718848311686067 +/- 3.73e-25], min |z_j - z_k| >= 0.4843940161, min |z_j| >= 0.1972639336]
+      P in [0.74481445696270809056879246680660762800866603248009, 0.74481445696270809056879246680660762800866603248010]
+OK    N = 5: P < sqrt(3)/2
+      enclosures of the unknowns:
+      x1   [2.58536459705539434146371533100 +/- 4.83e-30]
+      y2   [0.528338304777070801347757955103 +/- 3.75e-31]
+      x3   [-0.104387547446810800819095709945 +/- 1.74e-33]
+      y3   [0.167380702080685854364724033432 +/- 8.34e-32]
+      x4   [3.08086421451927357564898084495 +/- 2.92e-30]
+      y4   [-0.120435297024812589932041264142 +/- 2.37e-32]
+      x5   [2.16206283647335036604338650758 +/- 4.96e-30]
+      y5   [0.235484993875040319352008753958 +/- 1.40e-31]
+      G5   [0.693189261718848311686066627534 +/- 2.84e-31]
+      P    [0.744814456962708090568792466807 +/- 3.93e-31]
+   N = 6: fixed x1 = 2814239/1000000, G2 = 10415231/1000000, G4 = -3826609/1000000, G5 = 1314809/1000000, G6 = 425713/250000
+OK    N = 6: the 12 real collapse equations have exactly one solution in the box of radius 1e-4   [Newton residual 1.87e-95; at radius 1e-40 ||I - Y J(X)|| <= 4.27e-37, ||Y F(x~)|| <= 3.19e-94]
+OK    N = 6: on the box every Gamma_j != 0, sum Gamma_j != 0, the z_j are distinct and nonzero, each w_j/conj(z_j) contains 2P - i, and sum Gamma_j z_j, S, I contain 0   [sum Gamma [11.37258170174772820977905 +/- 2.67e-24], min |z_j - z_k| >= 0.4638034463, min |z_j| >= 0.2785951477]
+      P in [0.71368014852944277970831903717498569261723594515634, 0.71368014852944277970831903717498569261723594515635]
+OK    N = 6: P < sqrt(3)/2
+      enclosures of the unknowns:
+      x2   [-0.138234579883936804825213074921 +/- 2.88e-31]
+      y2   [0.241881080846717901148980404158 +/- 1.49e-31]
+      x3   [2.38655297797435185119854699287 +/- 3.30e-30]
+      y3   [0.261484299962234661569306136290 +/- 3.51e-31]
+      x4   [3.62095136623275241084878263909 +/- 2.32e-30]
+      y4   [0.508916666251106272260486328529 +/- 8.70e-32]
+      x5   [3.23084288709547559136351852817 +/- 5.00e-30]
+      y5   [-0.203850038245085786017645447185 +/- 2.86e-31]
+      x6   [3.76117091447446160577845919204 +/- 1.58e-30]
+      y6   [-0.296075907286865782463255201604 +/- 1.19e-31]
+      G3   [0.766298701747728209779052661521 +/- 4.78e-31]
+      P    [0.713680148529442779708319037175 +/- 1.44e-32]
+
+3. Strict local minima P_4, P_5, P_6 of P on the collapse set (Krawczyk on the Lagrange system, reduced Hessian)
+OK    N = 4: the Lagrange system (19 unknowns: v and mu) has exactly one solution in the box of radius 1e-7   [Newton residual 5.62e-96; at radius 1e-40 ||I - Y J(X)|| <= 5.89e-34]
+OK    N = 4: J_U invertible (chart x4, G2, G3) and every leading minor of the reduced Hessian positive: a strict local minimum   [minors [1.487, 1.487], [0.001504, 0.001504], [3.623e-05, 3.623e-05]]
+OK    N = 4: eigenvalues of the reduced Hessian in an orthonormal tangent basis, each enclosure certified by an inertia count   [[0.00066937724, 0.00066937858]  [0.021900266, 0.021900309]  [0.46733098, 0.46733191]]
+OK    N = 4: the reduced Hessian is positive definite at every (v, mu) in the box of radius 1e-9 about the KKT point   [minors [1.487, 1.488], [0.001478, 0.00153], [2.574e-05, 4.671e-05]]
+OK    N = 4: the side conditions of a genuine collapse hold on the KKT box   [sum Gamma [10.02824689419940856574191 +/- 1.65e-24], min |z_j - z_k| >= 0.5719300382, min |z_j| >= 0.1293297069]
+      P_4 in [0.79789678387986348076760587182149510165553631038330, 0.79789678387986348076760587182149510165553631038331]
+OK    P_4 < sqrt(3)/2
+      multipliers mu: [-0.31666559458923673146 +/- 3.04e-21], [-0.15128388027801653132 +/- 2.42e-21], [-0.47249356661815674746 +/- 1.83e-21], [0.94044304148541001024 +/- 3.62e-21], [-0.041425537647972703449 +/- 3.13e-22], [-0.10949586309035090226 +/- 3.46e-21], [-0.31989874337505802268 +/- 4.07e-21], [0.47082014411338162839 +/- 1.30e-21]
+      enclosures:
+      x1   [-2.54123669422730528341225238432 +/- 1.56e-30]
+      x2   [0.0624555535443135783912343624309 +/- 1.81e-32]
+      y2   [-0.113249622107744358521640118843 +/- 3.13e-31]
+      x3   [-3.06027237121142176070224708385 +/- 2.60e-30]
+      y3   [0.256070066913814458463717712659 +/- 1.77e-31]
+      x4   [-3.14380994896877682367251874883 +/- 7.09e-31]
+      y4   [-0.309726223055887117914600294673 +/- 1.93e-31]
+      G2   [9.60308638253131664131465413629 +/- 4.81e-30]
+      G3   [1.60747437978778679112233373200 +/- 2.29e-30]
+      G4   [-2.18231386811969486669507622368 +/- 2.11e-30]
+      P    [0.797896783879863480767605871821 +/- 4.96e-31]
+OK    N = 5: the Lagrange system (24 unknowns: v and mu) has exactly one solution in the box of radius 1e-7   [Newton residual 2.06e-95; at radius 1e-40 ||I - Y J(X)|| <= 5.33e-34]
+OK    N = 5: J_U invertible (chart x2, G2, G3, G4) and every leading minor of the reduced Hessian positive: a strict local minimum   [minors [1.712, 1.712], [0.3829, 0.3829], [0.0006435, 0.0006435], [1.246e-05, 1.246e-05]]
+OK    N = 5: eigenvalues of the reduced Hessian in an orthonormal tangent basis, each enclosure certified by an inertia count   [[0.00077319688, 0.00077319843]  [0.021825049, 0.021825093]  [0.081041808, 0.081041970]  [0.46184157, 0.46184249]]
+OK    N = 5: the reduced Hessian is positive definite at every (v, mu) in the box of radius 1e-9 about the KKT point   [minors [1.709, 1.715], [0.3807, 0.3852], [0.000498, 0.000789], [1.486e-06, 2.472e-05]]
+OK    N = 5: the side conditions of a genuine collapse hold on the KKT box   [sum Gamma [8.560387423201271395174478 +/- 3.66e-25], min |z_j - z_k| >= 0.4843939996, min |z_j| >= 0.1972638420]
+      P_5 in [0.74481445696249246102875218111988927898447258480344, 0.74481445696249246102875218111988927898447258480345]
+OK    P_5 < sqrt(3)/2
+      multipliers mu: [0.21670262560346466394 +/- 5.82e-22], [-0.83531834139809101582 +/- 2.85e-21], [0.15470416389604498751 +/- 1.40e-21], [0.31543389897214801943 +/- 2.79e-21], [0.14847765292643334495 +/- 3.57e-21], [0.054208028496576289576 +/- 8.20e-23], [-0.32964078593545297078 +/- 4.44e-21], [0.11144450393855274679 +/- 6.17e-22], [0.20418948974013260023 +/- 2.41e-21], [-0.040201236239808665819 +/- 4.41e-22]
+      enclosures:
+      x1   [2.58536522768315807461113287730 +/- 1.85e-30]
+      x2   [3.02459547941311432979979994770 +/- 2.01e-30]
+      y2   [0.528338080256985203074015420657 +/- 4.04e-31]
+      x3   [-0.104387543717512466616740507753 +/- 3.13e-31]
+      y3   [0.167380596429809015873017165321 +/- 1.88e-31]
+      x4   [3.08086466333856420987107125388 +/- 4.97e-30]
+      y4   [-0.120435328129044685030431219229 +/- 2.61e-31]
+      x5   [2.16206357918957220387227311114 +/- 4.42e-30]
+      y5   [0.235485161281341779571371615688 +/- 1.01e-31]
+      G2   [-2.51197595835621248593167970569 +/- 1.59e-30]
+      G3   [7.96870624057641838458832235746 +/- 3.76e-30]
+      G4   [1.41046751702382590129639346097 +/- 7.88e-31]
+      G5   [0.693189623957239595221442252732 +/- 1.36e-31]
+      P    [0.744814456962492461028752181120 +/- 1.11e-31]
+OK    N = 6: the Lagrange system (29 unknowns: v and mu) has exactly one solution in the box of radius 1e-8   [Newton residual 1.12e-95; at radius 1e-40 ||I - Y J(X)|| <= 1.26e-33]
+OK    N = 6: J_U invertible (chart x1, G2, G4, G5, G6) and every leading minor of the reduced Hessian positive: a strict local minimum   [minors [1.247, 1.247], [0.002539, 0.002539], [0.0001785, 0.0001785], [3.3e-06, 3.3e-06], [2.661e-08, 2.661e-08]]
+OK    N = 6: eigenvalues of the reduced Hessian in an orthonormal tangent basis, each enclosure certified by an inertia count   [[0.00029069310, 0.00029069368]  [0.0097669514, 0.0097669709]  [0.021110468, 0.021110510]  [0.046669456, 0.046669549]  [0.24478850, 0.24478899]]
+OK    N = 6: the reduced Hessian is positive definite at every (v, mu) in the box of radius 1e-12 about the KKT point   [minors [1.247, 1.247], [0.002538, 0.00254], [0.0001777, 0.0001793], [3.238e-06, 3.363e-06], [2.285e-08, 3.042e-08]]
+OK    N = 6: the side conditions of a genuine collapse hold on the KKT box   [sum Gamma [11.37258221770225645642333 +/- 3.29e-24], min |z_j - z_k| >= 0.4638033440, min |z_j| >= 0.2785951217]
+      P_6 in [0.71368014852939247497732477960166055113066584538564, 0.71368014852939247497732477960166055113066584538565]
+OK    P_6 < sqrt(3)/2
+      multipliers mu: [0.11093603309635966249 +/- 4.89e-21], [0.12299662931783485577 +/- 2.51e-21], [0.079821983374325661780 +/- 2.19e-22], [-0.65584209519788947254 +/- 2.60e-21], [0.14531862234995892009 +/- 2.03e-21], [0.19676882705941037241 +/- 2.56e-21], [0.0057283005252263171513 +/- 4.73e-23], [0.10058213763306103694 +/- 4.82e-21], [-0.035292842920222154639 +/- 1.89e-22], [-0.27477834719398327184 +/- 1.73e-21], [0.060454729007019355976 +/- 1.93e-22], [0.14330602294889871641 +/- 1.06e-21]
+      enclosures:
+      x1   [2.81423941871320278332848113968 +/- 1.85e-30]
+      x2   [-0.138234599167917971881306493922 +/- 4.29e-31]
+      y2   [0.241881039876746428741283806637 +/- 2.77e-31]
+      x3   [2.38655342719753130267940655051 +/- 4.98e-30]
+      y3   [0.261484410375897685371411810034 +/- 1.19e-31]
+      x4   [3.62095169669626990887824915880 +/- 2.67e-31]
+      y4   [0.508916560128839999302640869261 +/- 6.20e-32]
+      x5   [3.23084318830672301464194695442 +/- 2.52e-30]
+      y5   [-0.203850045515154998201374085785 +/- 4.99e-31]
+      x6   [3.76117114156576656479582995920 +/- 3.62e-30]
+      y6   [-0.296075972452182569420711999739 +/- 2.51e-31]
+      G2   [10.4152314321408212863385879743 +/- 1.57e-29]
+      G3   [0.766299097094028602107560024275 +/- 1.74e-31]
+      G4   [-3.82660926580425444627040649618 +/- 4.39e-30]
+      G5   [1.31480867870913845981867729598 +/- 6.00e-31]
+      G6   [1.70285227556252255442890791696 +/- 4.72e-30]
+      P    [0.713680148529392474977324779602 +/- 3.40e-31]
+OK    negative control: Krawczyk rejects the box of radius 1e-40 about the N = 4 existence point with P moved by 1e-6
+OK    negative control: for the objective -P the Lagrange system certifies the same point (multipliers -mu), and the second-order test rejects it as a minimum of -P   [leading minors [-1.487, -1.487], [0.001504, 0.001504], [-3.623e-05, -3.623e-05]]
+
+4. The N = 4 minimum in the normalization of the alpha-winding text, section "More than three vortices" (Gamma_1 = 1 on the strong vortex, z_c = 0, kappa = -1 + i b, P = b/2)
+      b   = [1.59579356775972696153521174364299020331107262 +/- 7.67e-46]
+OK    b = 1.5957935677597269615... as printed (every printed digit correct)
+OK    P_4 = 0.79789678387986348076760587182... as printed (every printed digit correct)
+      Gamma_1 = [1.000000000000000000000000 +/- 1e-29]
+      z_1     = [0.01664956691721713203797849 +/- 1.35e-27] + i [+/- 2.46e-94]
+      Gamma_2 = [0.1673914318538146976511196 +/- 8.29e-27]
+      z_2     = [-0.2191226402231640169648572 +/- 1.53e-27] + i [-0.3290676220068174161079264 +/- 2.43e-26]
+      Gamma_3 = [0.1041331880361994544727630 +/- 1.82e-26]
+      z_3     = [-0.1579874300121784508867655 +/- 1.88e-26] + i [-0.2864759934272000786715222 +/- 3.78e-26]
+      Gamma_4 = [-0.2272513003829139635704715 +/- 1.65e-26]
+      z_4     = [-0.1605333843048210863758637 +/- 5.91e-27] + i [-0.3736601672808164368440270 +/- 2.18e-26]
+OK    the printed 13-digit Gamma and z agree with the certified enclosure to half a unit in the last digit
+OK    in these coordinates (positions, circulations, b) the Lagrange system of min P has exactly one solution in the box of radius 1e-8   [||I - Y J(X)|| <= 5.27e-33]
+OK       a strict local minimum (J_U invertible, reduced Hessian positive definite, genuine collapse on the box)
+OK       its P = b/2 is the P_4 of part 3   [P in [0.79789678387986348076760587182149510165553631038330, 0.79789678387986348076760587182149510165553631038331]]
+OK       the Hessian of the Lagrangian of P on the tangent space has eigenvalues 1.106, 6.289, 9.377 (as printed, to the last digit)   [[1.1059018, 1.1059040]  [6.2890958, 6.2891084]  [9.3769091, 9.3769279]]
+      (for the objective b = 2P the multipliers and the Hessian of the Lagrangian double, and so do the eigenvalues)
+
+5. The four-vortex minima of the alpha-models quoted in the same section (alpha = 1, SQG, and alpha = 2): strict local minima of P, with P free in the alpha-model equations
+   alpha = 1: the stored binary64 minimum has kappa = (0.046448603 + 0.051085578j) under the alpha-model law: it expands; its mirror image z -> conj(z) collapses and is certified
+OK    alpha = 1, N = 4: the Lagrange system of min P (19 unknowns) has exactly one solution in the box of radius 1e-7   [Newton residual 1.31e-95; at radius 1e-40 ||I - Y J(X)|| <= 2.40e-34]
+OK    alpha = 1: J_U invertible (chart x2, G2, G3) and every leading minor of the reduced Hessian positive: a strict local minimum   [minors [1.702, 1.702], [0.7167, 0.7167], [0.0003963, 0.0003963]]
+OK    alpha = 1: eigenvalues of the reduced Hessian in an orthonormal tangent basis, each certified by an inertia count   [[0.00054143903, 0.00054144011]  [0.13928804, 0.13928832]  [0.82604166, 0.82604331]]
+OK    alpha = 1: the reduced Hessian is positive definite at every (v, mu) in the box of radius 1e-8 about the KKT point
+OK    alpha = 1: on the box every Gamma_j != 0, sum Gamma_j != 0, the z_j distinct and nonzero, each 2 pi v_j/z_j contains 2 pi kappa = -1 + 2 i P, and sum Gamma_j z_j, I, E = sum Gamma_j Gamma_k r_jk^-alpha contain 0   [sum Gamma [9.6769137012411570286 +/- 2.42e-20], min |z_j - z_k| >= 0.6502127866, min |z_j| >= 0.09314896701]
+OK    alpha = 1: the objective has the right sign on the box (ow t > 0 for the certified t), so the objective is P there and the certified point is a minimum of P, not a maximum   [t in [0.5499151189 +/- 7.44e-13]]
+      P_4 in [0.54991511890074225107337815205792292683185409733434, 0.54991511890074225107337815205792292683185409733435]
+OK    alpha = 1: P_4 = 0.5499151189... as printed (every printed digit correct)
+OK    alpha = 1: P_4 < 2/3, the three-vortex bound sqrt(3 + alpha)/(2 + alpha)
+      circulations relative to the strongest: 0.1068947377, -0.1371931796, 1.000000000, 0.06470959412
+OK    alpha = 1: one strong and three weak vortices (|Gamma_j| < |Gamma_strong|/4 for the other three)
+      multipliers mu: [0.12054063460697951501 +/- 2.17e-21], [-0.14015081368557791840 +/- 2.90e-21], [0.080656019261884163568 +/- 1.03e-22], [-0.061045840183285760173 +/- 1.63e-22], [0.28676609675680048234 +/- 4.40e-21], [-0.64700069469679966789 +/- 4.15e-21], [0.19984116197208407541 +/- 4.25e-21], [0.16039343596791511014 +/- 4.31e-21]
+      enclosures (P is the signed winding t, 2 pi kappa = -1 + 2 i t):
+      x1   [2.49538639919175915267151751142 +/- 8.80e-31]
+      x2   [2.47683128277516178160906113307 +/- 7.69e-31]
+      y2   [0.663051894027687272121660162712 +/- 4.50e-31]
+      x3   [-0.0478091780543542486332384046159 +/- 2.49e-32]
+      y3   [0.0799438086940879624844433144592 +/- 1.59e-32]
+      x4   [1.86788163126905382405240384381 +/- 4.94e-30]
+      y4   [0.170336238467950725241443810208 +/- 2.68e-31]
+      G2   [-1.28344184606427206672675726145 +/- 1.30e-30]
+      G3   [9.35499745874294636852264191829 +/- 4.86e-30]
+      G4   [0.605358088562482726779971281377 +/- 2.69e-31]
+      P    [0.549915118900742251073378152058 +/- 7.71e-32]
+   alpha = 2: the stored binary64 minimum has kappa = (-2.7766254 + 2.2861282j) under the alpha-model law: it collapses
+OK    alpha = 2, N = 4: the Lagrange system of min P (19 unknowns) has exactly one solution in the box of radius 1e-7   [Newton residual 1.45e-95; at radius 1e-40 ||I - Y J(X)|| <= 4.47e-34]
+OK    alpha = 2: J_U invertible (chart x3, G2, G4) and every leading minor of the reduced Hessian positive: a strict local minimum   [minors [0.8974, 0.8974], [5.256e-05, 5.256e-05], [1.673e-06, 1.673e-06]]
+OK    alpha = 2: eigenvalues of the reduced Hessian in an orthonormal tangent basis, each certified by an inertia count   [[5.0296093e-5, 5.0296194e-5]  [0.023656395, 0.023656442]  [0.37029987, 0.37030061]]
+OK    alpha = 2: the reduced Hessian is positive definite at every (v, mu) in the box of radius 1e-8 about the KKT point
+OK    alpha = 2: on the box every Gamma_j != 0, sum Gamma_j != 0, the z_j distinct and nonzero, each 2 pi v_j/z_j contains 2 pi kappa = -1 + 2 i P, and sum Gamma_j z_j, I, E = sum Gamma_j Gamma_k r_jk^-alpha contain 0   [sum Gamma [24.790452069978391161 +/- 3.01e-19], min |z_j - z_k| >= 0.8384665939, min |z_j| >= 0.08038626005]
+OK    alpha = 2: the objective has the right sign on the box (ow t > 0 for the certified t), so the objective is P there and the certified point is a minimum of P, not a maximum   [t in [0.4116738600 +/- 4.54e-11]]
+      P_4 in [0.41167386004534379850503649708175762358883241919520, 0.41167386004534379850503649708175762358883241919521]
+OK    alpha = 2: P_4 = 0.4116738600... as printed (every printed digit correct)
+OK    alpha = 2: P_4 < sqrt(5)/4, the three-vortex bound sqrt(3 + alpha)/(2 + alpha)
+      circulations relative to the strongest: 0.04121797875, 1.000000000, -0.08946870461, 0.07006305253
+OK    alpha = 2: one strong and three weak vortices (|Gamma_j| < |Gamma_strong|/4 for the other three)
+      multipliers mu: [-0.052081907186812099041 +/- 1.81e-22], [0.057041244195843576496 +/- 1.17e-23], [-0.067721842681248602282 +/- 1.07e-22], [0.062762505672217124827 +/- 8.57e-23], [0.084107630953578592343 +/- 1.90e-22], [0.17510219058626465848 +/- 2.83e-21], [-0.41540215979806853543 +/- 3.27e-21], [0.15619233825822528461 +/- 3.63e-21]
+      enclosures (P is the signed winding t, 2 pi kappa = -1 + 2 i t):
+      x1   [2.01142188571461386988630647148 +/- 2.12e-30]
+      x2   [-0.0309650082551907017834163648970 +/- 4.37e-32]
+      y2   [0.0741830106464113483607700336588 +/- 1.44e-32]
+      x3   [2.78805463718451756167316802734 +/- 3.33e-30]
+      y3   [0.652338425692706430683204208653 +/- 4.94e-31]
+      x4   [2.81891658073908161556716877490 +/- 2.94e-30]
+      y4   [-0.225784292330495358569222521721 +/- 4.62e-31]
+      G2   [24.2612575938219520740344840798 +/- 2.10e-29]
+      G3   [-2.17062328907172887761889032831 +/- 1.45e-30]
+      G4   [1.69981776522816796428417291159 +/- 4.29e-31]
+      P    [0.411673860045343798505036497082 +/- 2.43e-31]
+
+6. alpha = 2, N = 11: a self-similar collapse without rotation (kappa real, P = 0)
+      the stored binary64 configuration has kappa = (0.0045490694 + 1.1519098e-17j) under the alpha-model law: it EXPANDS
+      its mirror image z -> conj(z) has kappa -> -conj(kappa) and collapses; that is what is certified
+      minimum-norm Newton: residual 4.34e-94; singular values of the 22 x 31 Jacobian from 441 to 0.0864; smallest of J_U 0.0595
+      fixed: G2 = 87585113/100000000, G3 = -447216069/50000000, G4 = 36142017/50000000, G5 = 65153527/50000000, G6 = 85159993/100000000, G7 = 86363649/3125000, G8 = 8798381/12500000, G9 = 92039457/100000000, G10 = 229334501/100000000
+OK    alpha = 2, N = 11: the 22 real equations 2 pi v_j = -z_j (kappa = -1/(2 pi), real) have exactly one solution in the box of radius 1e-6 in the 22 unknowns (21 coordinates and Gamma_11)   [Newton residual 3.92e-94; at radius 1e-40 ||I - Y J(X)|| <= 1.58e-35]
+OK    alpha = 2, N = 11: on the box every Gamma_j != 0, sum Gamma_j != 0, the z_j distinct and nonzero, each 2 pi v_j/z_j contains -1, and sum Gamma_j z_j, I, E = sum Gamma_j Gamma_k r_jk^-2 contain 0   [sum Gamma [27.742631840875026366 +/- 1.49e-19], min |z_j - z_k| >= 0.3487620902, 0.2128152283 <= |z_j| <= 5.078363252]
+      so every vortex runs straight into 0: |b|^4 = 1 - 2t/pi, arg b constant, collapse at t_c = pi/2; the 22 x 22 Jacobian is invertible, so by the implicit function theorem these collapses form a 9-parameter family (modulo symmetries) near this point
+      enclosures of the unknowns:
+      x1   [3.67584056466491605461543938296 +/- 2.87e-30]
+      x2   [4.08063854669392366293812987017 +/- 3.73e-30]
+      y2   [0.0721292082553960707206663880197 +/- 1.89e-32]
+      x3   [3.80948537776201159036104761669 +/- 3.60e-30]
+      y3   [1.01864837464190766808145580621 +/- 3.07e-30]
+      x4   [2.90235244691538563150420914176 +/- 8.63e-31]
+      y4   [0.117404372666590935077314036784 +/- 2.47e-31]
+      x5   [1.90974061904103039686397039540 +/- 8.74e-31]
+      y5   [0.367473020528078429794379278141 +/- 2.17e-31]
+      x6   [2.47982119035216611876379798140 +/- 3.53e-30]
+      y6   [0.235028609056880720992286646685 +/- 8.44e-32]
+      x7   [0.0168987396463170165294136194590 +/- 1.21e-32]
+      y7   [0.212143239325307592022421919690 +/- 3.11e-31]
+      x8   [3.27748217725889296188220028703 +/- 1.82e-31]
+      y8   [0.0337754804826019029882189285364 +/- 3.12e-32]
+      x9   [4.44408827493923663893227736480 +/- 2.94e-30]
+      y9   [0.250387613212529376307568023833 +/- 3.01e-31]
+      x10  [5.00427369124751695183028681918 +/- 3.53e-30]
+      y10  [0.864302113703010147925248170012 +/- 4.20e-31]
+      x11  [4.70037445948358826806692625898 +/- 2.17e-30]
+      y11  [0.486930182702173187272574785181 +/- 2.47e-31]
+      G11  [0.379613540875026366148503930103 +/- 6.61e-32]
+
+7. Controls on three vortices, where P > sqrt(3)/2 is a theorem ((A), (B) are proofs; (C), (D), (E) are numerical)
+  (A) existence pipeline at the mu = 1/2 arc minimizer (chart: G2 = 1/2 and x2 fixed)
+OK    (A) Krawczyk proves a unique three-vortex collapse at G2 = 1/2, x2 = -505513/1000000, in the box of radius 1e-4   [contraction 3.72e-37]
+OK    (A) side conditions of a genuine collapse hold on the box
+      P in [1.06470597627145667562668592266861476294122588542737, 1.06470597627145667562668592266861476294122588542738]
+OK    (A) its P is certified ABOVE sqrt(3)/2, as the theorem requires
+  (B) KKT system with Gamma_2 = 1/2 held fixed (min P on the collapsing arc A_-)
+OK    (B) mu = 1/2: Krawczyk proves a unique KKT point in the box of radius 1e-6 (13 unknowns)   [contraction 7.33e-35]
+OK    (B) mu = 1/2: reduced Hessian positive definite (chart x3): a strict local minimum of P on the arc   [eigenvalue [2.2488552, 2.2488597]]
+      closed form P_-(1/2) = [1.0647059762712043373549862489081020717900497380140 +/- 4.58e-50]
+      certified KKT P     = [1.0647059762712043373549862489081020717900497380140 +/- 4.58e-50]
+OK    (B) mu = 1/2: the certified minimum contains the closed form P_-(mu) = sqrt(y_1(mu))   [|difference| <= 4.68e-95]
+OK    (B) mu = 1/2: it contains the root 1.064705976271204337354986248908102071790 of 8748 xi^6 - 49005 xi^4 + 27794 xi^2 + 18723
+OK    (B) mu = 1/2: the minimum is certified above sqrt(3)/2
+  (B) KKT system with Gamma_2 = 1/20 held fixed (min P on the collapsing arc A_-)
+OK    (B) mu = 1/20: Krawczyk proves a unique KKT point in the box of radius 1e-11 (13 unknowns)   [contraction 6.78e-30]
+OK    (B) mu = 1/20: reduced Hessian positive definite (chart x3): a strict local minimum of P on the arc   [eigenvalue [2.0024050, 2.0024090]]
+      closed form P_-(1/20) = [0.86911287406080466556816965006949680567624512251753 +/- 1.37e-51]
+      certified KKT P     = [0.86911287406080466556816965006949680567624512251753 +/- 1.37e-51]
+OK    (B) mu = 1/20: the certified minimum contains the closed form P_-(mu) = sqrt(y_1(mu))   [|difference| <= 2.05e-94]
+OK    (B) mu = 1/20: the minimum is certified above sqrt(3)/2
+  (C) min P over the whole three-vortex collapse set (Gamma_2 free); the infimum sqrt(3)/2 is not attained
+      at the mu = 1/2 arc minimizer the Lagrange residual is 3.408e-01 (a minimum on the arc, not on the whole set: dP/dGamma_2 != 0 there)
+OK    (C) numerical: Newton on the Lagrange system with Gamma_2 free does not converge from there   [39 steps, final residual 1.62e+14]
+      descent step    0: P = 1.0647059763  Gamma_2 = 5.000e-01  Gamma_3 = -3.333e-01  min separation/size = 3.243e-01
+      descent step    3: P = 1.0431778278  Gamma_2 = 4.649e-01  Gamma_3 = -3.173e-01  min separation/size = 3.109e-01
+      descent step    6: P = 0.9834138069  Gamma_2 = 3.605e-01  Gamma_3 = -2.650e-01  min separation/size = 2.648e-01
+      descent step    9: P = 0.9308084318  Gamma_2 = 2.541e-01  Gamma_3 = -2.026e-01  min separation/size = 2.056e-01
+      descent step   12: P = 0.8993576049  Gamma_2 = 1.750e-01  Gamma_3 = -1.490e-01  min separation/size = 1.521e-01
+      descent step   15: P = 0.8822530657  Gamma_2 = 1.186e-01  Gamma_3 = -1.060e-01  min separation/size = 1.082e-01
+      descent step   18: P = 0.8736278389  Gamma_2 = 7.959e-02  Gamma_3 = -7.373e-02  min separation/size = 7.493e-02
+      descent step   21: P = 0.8695003755  Gamma_2 = 5.310e-02  Gamma_3 = -5.042e-02  min separation/size = 5.103e-02
+      descent step  314: P = 0.8660522121  Gamma_2 = 3.758e-03  Gamma_3 = -3.744e-03  min separation/size = 3.735e-03
+OK    (C) numerical: a monotone projected descent of P on the collapse set approaches sqrt(3)/2 from above as Gamma_2, Gamma_3 -> 0 (the weak pair merges); no interior minimum   [lowest P 0.8660522121, sqrt(3)/2 = 0.8660254038]
+  (D) direct search for a three-vortex collapse with P fixed (Gamma_2 fixed); multistart Levenberg-Marquardt, 300 starts each
+OK    (D) numerical: Gamma_2 = 0.5, P = 0.85 < sqrt(3)/2: no nondegenerate root in 300 starts   [0 roots; 85 runs ended degenerate (shrinking or merging), smallest residual of the other 215 runs 1.15e-02]
+OK    (D) numerical: Gamma_2 = 0.5, P = 0.8 < sqrt(3)/2: no nondegenerate root in 300 starts   [0 roots; 94 runs ended degenerate (shrinking or merging), smallest residual of the other 206 runs 1.16e-02]
+OK    (D) numerical: Gamma_2 = 0.05, P = 0.85 < sqrt(3)/2: no nondegenerate root in 300 starts   [0 roots; 45 runs ended degenerate (shrinking or merging), smallest residual of the other 255 runs 1.03e-03]
+OK    (D) numerical: Gamma_2 = 1.0, P = 0.85 < sqrt(3)/2: no nondegenerate root in 300 starts   [0 roots; 52 runs ended degenerate (shrinking or merging), smallest residual of the other 248 runs 1.79e-02]
+OK    (D) positive control: Gamma_2 = 0.5, P = 1.1 > P_-(1/2): the same search finds roots, and Krawczyk certifies one as a genuine collapse with P = 11/10 exactly   [92 roots; 24 runs ended degenerate (shrinking or merging), smallest residual of the other 184 runs 1.06e-02]
+  (E) alpha = 2, three vortices, kappa real (P = 0; excluded by P > sqrt(5)/4): multistart search, 600 starts
+OK    (E) numerical: alpha = 2, kappa real: no nondegenerate three-vortex root in 600 starts   [0 roots; 572 ended degenerate; smallest residual of the other 28 runs 4.88e-02; smallest of all runs 4.21e-02 (at size 3.96e-02)]
+
+8. Independent re-check of every certified point with separate Biot-Savart code at 80 digits (non-rigorous)
+OK    existence, N = 4: all 4 kappa_j agree, Re kappa < 0 (collapse), z_c = 0 and P agrees with the enclosure   [spread 8.1e-81, Re kappa = -0.15915494, |z_c| = 8.4e-82, P = 0.7978967838798807450374866, |P - P_cert| = 2.1e-81]
+OK    minimum P_4: all 4 kappa_j agree, Re kappa < 0 (collapse), z_c = 0 and P agrees with the enclosure   [spread 4.7e-81, Re kappa = -0.15915494, |z_c| = 1.1e-82, P = 0.7978967838798634807676059, |P - P_cert| = 5.3e-81]
+OK    existence, N = 5: all 5 kappa_j agree, Re kappa < 0 (collapse), z_c = 0 and P agrees with the enclosure   [spread 9.6e-81, Re kappa = -0.15915494, |z_c| = 1.2e-81, P = 0.7448144569627080905687925, |P - P_cert| = 7.4e-81]
+OK    minimum P_5: all 5 kappa_j agree, Re kappa < 0 (collapse), z_c = 0 and P agrees with the enclosure   [spread 7.9e-81, Re kappa = -0.15915494, |z_c| = 1.3e-81, P = 0.7448144569624924610287522, |P - P_cert| = 5.3e-81]
+OK    existence, N = 6: all 6 kappa_j agree, Re kappa < 0 (collapse), z_c = 0 and P agrees with the enclosure   [spread 7.4e-81, Re kappa = -0.15915494, |z_c| = 1.9e-82, P = 0.713680148529442779708319, |P - P_cert| = 2.1e-81]
+OK    minimum P_6: all 6 kappa_j agree, Re kappa < 0 (collapse), z_c = 0 and P agrees with the enclosure   [spread 7.4e-81, Re kappa = -0.15915494, |z_c| = 2.8e-82, P = 0.7136801485293924749773248, |P - P_cert| = 8.4e-81]
+OK    alpha-winding normalization, N = 4: every kappa_j = -1 + i b   [max |kappa_j - (-1 + i b)| = 9.4e-81, |z_c| = 6.3e-83]
+OK    alpha = 1, minimum P_4: all 4 kappa_j agree, Re kappa < 0 (collapse), z_c = 0 and P agrees with the enclosure   [spread 7.5e-81, Re kappa = -0.15915494, |z_c| = 2.2e-82, P = 0.5499151189007422510733782, |P - P_cert| = 2.1e-81]
+OK    alpha = 2, minimum P_4: all 4 kappa_j agree, Re kappa < 0 (collapse), z_c = 0 and P agrees with the enclosure   [spread 1.6e-80, Re kappa = -0.15915494, |z_c| = 2.1e-83, P = 0.4116738600453437985050365, |P - P_cert| = 1.1e-80]
+OK    alpha = 2, N = 11: all 11 kappa_j agree, 2 pi kappa = -1 (real: no rotation, collapse), z_c = 0   [spread 3.4e-79, 2 pi kappa = (-1.0 - 1.17365810144e-79j), |Im kappa|/|kappa| = 1.2e-79, |z_c| = 2.1e-81]
+
+Summary of the certified enclosures
+  N = 4 collapse at rational chart values, P           [0.79789678387988074503748659045088937981074482678272, 0.79789678387988074503748659045088937981074482678273]
+  N = 5 collapse at rational chart values, P           [0.74481445696270809056879246680660762800866603248009, 0.74481445696270809056879246680660762800866603248010]
+  N = 6 collapse at rational chart values, P           [0.71368014852944277970831903717498569261723594515634, 0.71368014852944277970831903717498569261723594515635]
+  P_4, strict local minimum                            [0.79789678387986348076760587182149510165553631038330, 0.79789678387986348076760587182149510165553631038331]
+     tangent eigenvalues                               [0.00066937724, 0.00066937858]  [0.021900266, 0.021900309]  [0.46733098, 0.46733191]
+  P_5, strict local minimum                            [0.74481445696249246102875218111988927898447258480344, 0.74481445696249246102875218111988927898447258480345]
+     tangent eigenvalues                               [0.00077319688, 0.00077319843]  [0.021825049, 0.021825093]  [0.081041808, 0.081041970]  [0.46184157, 0.46184249]
+  P_6, strict local minimum                            [0.71368014852939247497732477960166055113066584538564, 0.71368014852939247497732477960166055113066584538565]
+     tangent eigenvalues                               [0.00029069310, 0.00029069368]  [0.0097669514, 0.0097669709]  [0.021110468, 0.021110510]  [0.046669456, 0.046669549]  [0.24478850, 0.24478899]
+  N = 4, alpha-winding normalization, b                [1.595793567759726961535211743642990203311 +/- 7.27e-41]
+     tangent eigenvalues for P                         [1.1059018, 1.1059040]  [6.2890958, 6.2891084]  [9.3769091, 9.3769279]
+  alpha = 1, P_4, strict local minimum                 [0.54991511890074225107337815205792292683185409733434, 0.54991511890074225107337815205792292683185409733435]
+     tangent eigenvalues                               [0.00054143903, 0.00054144011]  [0.13928804, 0.13928832]  [0.82604166, 0.82604331]
+  alpha = 2, P_4, strict local minimum                 [0.41167386004534379850503649708175762358883241919520, 0.41167386004534379850503649708175762358883241919521]
+     tangent eigenvalues                               [5.0296093e-5, 5.0296194e-5]  [0.023656395, 0.023656442]  [0.37029987, 0.37030061]
+  alpha = 2, N = 11, kappa real                        non-rotating collapse certified; Gamma_11 in [0.37961354087502636615 +/- 1.50e-21]
+  N = 3 control: P_-(1/2)                              [1.064705976271204337354986248908102071790 +/- 4.98e-41]
+  N = 3 control: P_-(1/20)                             [0.8691128740608046655681696500694968056762 +/- 4.52e-41]
+
+94 checks, run time 125 s
+all checks passed

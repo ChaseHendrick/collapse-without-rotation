@@ -1,0 +1,18 @@
+[
+  {
+    "id": "theorem-clusters",
+    "statement": "A strong Euler vortex with weak tight clusters has P >= sqrt(3)/2 - o(1).",
+    "status": "proved"
+  },
+  {
+    "id": "continuum-p",
+    "statement": "The printed continuum minimum begins 0.47736353369161202484. It is numerical, and the forty-digit stability is conditional on the observed rate.",
+    "status": "numerical",
+    "certificate": "data/verify-continuum-limit.txt"
+  },
+  {
+    "id": "oneil-2013",
+    "statement": "O'Neil, Nonlinearity 26 (2013), is known from its abstract only.",
+    "status": "unread"
+  }
+]
