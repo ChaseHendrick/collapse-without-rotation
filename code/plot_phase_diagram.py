@@ -49,7 +49,7 @@ fits = json.load(open(os.path.join(PD, 'alpha-inf-fits.json')))
 lo = min(fits[f]['alpha_inf_range'][0] for f in fits)
 hi = max(fits[f]['alpha_inf_range'][1] for f in fits)
 
-fig, ax = plt.subplots(1, 2, figsize=(6.5, 2.9))
+fig, ax = plt.subplots(1, 2, figsize=(6.5, 3.1))
 for fam, col, mk, lab in STY:
     N = np.array([int(r['N']) for r in rows if r['family'] == fam])
     a = np.array([float(r['alpha_star']) for r in rows if r['family'] == fam])
@@ -72,7 +72,7 @@ ax[0].set_xlim(0, 82)
 ax[0].set_ylim(0, 6.2)
 ax[0].text(80, 2.06, r'$\alpha = 2$: $N \geq 11$', ha='right', va='bottom', fontsize=7, color=MUTED)
 ax[0].text(80, 1.06, r'SQG: $N \geq 60$', ha='right', va='bottom', fontsize=7, color=MUTED)
-ax[0].legend(fontsize=6.5, frameon=False, loc='upper right', handletextpad=0.3, borderaxespad=0.2)
+ax[0].legend(fontsize=7.2, frameon=False, loc='upper right', handletextpad=0.3, borderaxespad=0.2)
 ax[1].set_xlabel('$1/N$')
 ax[1].set_xlim(0, 0.08)
 ax[1].set_ylim(0, 2.2)
@@ -84,3 +84,8 @@ fig.tight_layout(w_pad=2.0)
 fig.savefig(os.path.join(FIG, 'phase-diagram.pdf'), metadata={'CreationDate': None, 'ModDate': None})
 fig.savefig(os.path.join(FIG, 'phase-diagram.svg'), metadata={'Date': None})
 print('wrote paper/figures/phase-diagram.pdf and .svg; alpha_inf band %.3f .. %.3f' % (lo, hi))
+
+# Keep generated SVG text stable and free of insignificant trailing whitespace.
+from pathlib import Path as _Path
+for _svg in (_Path(__file__).resolve().parents[1] / "paper/figures").glob("*.svg"):
+    _svg.write_text("\n".join(line.rstrip() for line in _svg.read_text().splitlines()) + "\n")
