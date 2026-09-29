@@ -5,6 +5,8 @@ peer reviewed.
 
 ## 1.0.1 (2026-09-28)
 
+**DOI:** [10.5281/zenodo.23028527](https://doi.org/10.5281/zenodo.23028527) (2026-09-29). The previous archive is unchanged.
+
 A checking release of the same preprint. The manuscript is unchanged. This archive adds `code/check_quote.py`, `code/check_abstract.py` and `code/check_hypotheses.py`. The printed continuum value begins the forty-digit line in the log and stays numerical, conditional on the observed rate. The counts 8 and 57 are the stability log. `code/hypotheses.json` names the cluster theorem as proved in the text and keeps O'Neil 2013 unread. The stored radius does not show a gap of 10^-94.
 
 ## 1.0.0 (2026-09-25)
