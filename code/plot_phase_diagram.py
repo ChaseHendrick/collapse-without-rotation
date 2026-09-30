@@ -49,7 +49,7 @@ fits = json.load(open(os.path.join(PD, 'alpha-inf-fits.json')))
 lo = min(fits[f]['alpha_inf_range'][0] for f in fits)
 hi = max(fits[f]['alpha_inf_range'][1] for f in fits)
 
-fig, ax = plt.subplots(1, 2, figsize=(6.5, 3.1))
+fig, ax = plt.subplots(1, 2, figsize=(6.5, 4.0))
 for fam, col, mk, lab in STY:
     N = np.array([int(r['N']) for r in rows if r['family'] == fam])
     a = np.array([float(r['alpha_star']) for r in rows if r['family'] == fam])
@@ -70,17 +70,22 @@ for k in range(2):
 ax[0].set_xlabel('number of vortices $N$')
 ax[0].set_xlim(0, 82)
 ax[0].set_ylim(0, 6.2)
-ax[0].text(80, 2.06, r'$\alpha = 2$: $N \geq 11$', ha='right', va='bottom', fontsize=7, color=MUTED)
-ax[0].text(80, 1.06, r'SQG: $N \geq 60$', ha='right', va='bottom', fontsize=7, color=MUTED)
-ax[0].legend(fontsize=7.2, frameon=False, loc='upper right', handletextpad=0.3, borderaxespad=0.2)
+ax[0].set_title('(a) Finite vortex counts', fontsize=8.5)
+fig.legend(*ax[0].get_legend_handles_labels(), fontsize=7.2, frameon=False,
+           loc='upper center', bbox_to_anchor=(0.52, 0.99), ncol=2,
+           handletextpad=0.3, columnspacing=1.0)
+fig.text(0.30, 0.065, r'$\alpha=2$: $N\geq11$;  SQG ($\alpha=1$): $N\geq60$',
+         ha='center', fontsize=7, color=MUTED)
 ax[1].set_xlabel('$1/N$')
 ax[1].set_xlim(0, 0.08)
 ax[1].set_ylim(0, 2.2)
 ax[1].axhspan(lo, hi, color='#2a78d6', alpha=0.12, lw=0, zorder=0)
-ax[1].text(0.002, (lo + hi)/2, r'fitted $\alpha_\infty$: %.2f to %.2f' % (lo, hi), va='center', fontsize=7, color=INK)
-ax[1].text(0.079, 2.03, r'$\alpha = 2$', ha='right', va='bottom', fontsize=7, color=MUTED)
-ax[1].text(0.079, 1.03, r'SQG', ha='right', va='bottom', fontsize=7, color=MUTED)
-fig.tight_layout(w_pad=2.0)
+ax[1].set_title('(b) Reciprocal vortex count', fontsize=8.5)
+fig.text(0.77, 0.065, r'fitted $\alpha_\infty$: %.2f to %.2f' % (lo, hi),
+         ha='center', fontsize=7, color=INK)
+fig.text(0.54, 0.025, r'Dashed reference lines: $\alpha=2$ and SQG ($\alpha=1$)',
+         ha='center', fontsize=7, color=MUTED)
+fig.subplots_adjust(left=0.085, right=0.965, bottom=0.235, top=0.745, wspace=0.29)
 fig.savefig(os.path.join(FIG, 'phase-diagram.pdf'), metadata={'CreationDate': None, 'ModDate': None})
 fig.savefig(os.path.join(FIG, 'phase-diagram.svg'), metadata={'Date': None})
 print('wrote paper/figures/phase-diagram.pdf and .svg; alpha_inf band %.3f .. %.3f' % (lo, hi))
