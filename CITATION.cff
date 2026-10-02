@@ -9,8 +9,8 @@ authors:
     orcid: "https://orcid.org/0009-0002-9754-6087"
 license: Apache-2.0
 repository-code: "https://github.com/ChaseHendrick/collapse-without-rotation"
-version: "1.0.4"
-doi: "10.5281/zenodo.23050575"
+version: "1.0.5"
+doi: "10.5281/zenodo.23096161"
 preferred-citation:
   type: article
   title: "Point-Vortex Collapse Without Rotation: A Cluster Mechanism, a Phase Diagram and a Continuum Limit"
@@ -21,4 +21,4 @@ preferred-citation:
       orcid: "https://orcid.org/0009-0002-9754-6087"
   year: 2026
   url: "https://github.com/ChaseHendrick/collapse-without-rotation"
-  doi: "10.5281/zenodo.23050575"
+  doi: "10.5281/zenodo.23096161"
