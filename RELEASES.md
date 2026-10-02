@@ -3,7 +3,13 @@
 Each release of this repository is archived on Zenodo with its own DOI. The manuscript is a preprint and has not been
 peer reviewed.
 
-## 1.0.4 (2026-09-29)
+## 1.0.5 (2026-10-02)
+
+Editorial update. The statement on the use of AI is now a labelled statement (**Use of AI.**) at the body's own size, beside Funding, instead of small type. The title-page date line is removed, and the PDF is built with Tectonic. O'Neil (2010) is credited with numerical evidence for collapsing sheets; the word "first" is removed from that credit. The companion paper is cited by its Zenodo concept DOI, which always resolves to its newest release, and Grotto and Pappalettera (2025) by its published version and DOI. Numerical inputs, proof programs, certificates and results are unchanged. No new proof or scientific validation is claimed; previous archives remain unchanged.
+
+## 1.0.4 (2026-09-30)
+
+**DOI:** [10.5281/zenodo.23050575](https://doi.org/10.5281/zenodo.23050575). Publication / Preprint.
 
 Figure layout update. Moves the family legend above the phase-diagram panels and the threshold, reference-line and fitted-limit notes below them. Adds outer panel titles and margin space for the final tick. The vector figure and manuscript PDF were rebuilt and inspected at manuscript scale. Before/after plotted-array hashes match. Scientific captions, numerical inputs, results, proof programs and certificates are unchanged. No new proof or scientific validation is claimed; previous archives remain unchanged.
 
